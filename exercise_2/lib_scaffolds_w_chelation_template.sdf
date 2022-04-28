@@ -199,7 +199,7 @@ M  END
         "lstSymAPs": [],
         "vertexId": 2,
         "buildingBlockId": -99,
-        "buildingBlockType": "UNDEFINED",
+        "buildingBlockType": "FRAGMENT",
         "isRCV": false,
         "uniquefyingPropertyKeys": [],
         "allowedMutationTypes": [
@@ -233,7 +233,7 @@ M  END
         "lstSymAPs": [],
         "vertexId": 3,
         "buildingBlockId": -99,
-        "buildingBlockType": "UNDEFINED",
+        "buildingBlockType": "FRAGMENT",
         "isRCV": false,
         "uniquefyingPropertyKeys": [],
         "allowedMutationTypes": [
@@ -267,7 +267,7 @@ M  END
         "lstSymAPs": [],
         "vertexId": 4,
         "buildingBlockId": -99,
-        "buildingBlockType": "UNDEFINED",
+        "buildingBlockType": "FRAGMENT",
         "isRCV": false,
         "uniquefyingPropertyKeys": [],
         "allowedMutationTypes": [
@@ -291,7 +291,7 @@ M  END
         "lstSymAPs": [],
         "vertexId": 5,
         "buildingBlockId": -99,
-        "buildingBlockType": "UNDEFINED",
+        "buildingBlockType": "FRAGMENT",
         "isRCV": true,
         "uniquefyingPropertyKeys": [],
         "allowedMutationTypes": [
@@ -325,7 +325,7 @@ M  END
         "lstSymAPs": [],
         "vertexId": 7,
         "buildingBlockId": -99,
-        "buildingBlockType": "UNDEFINED",
+        "buildingBlockType": "FRAGMENT",
         "isRCV": false,
         "uniquefyingPropertyKeys": [],
         "allowedMutationTypes": [
@@ -359,7 +359,7 @@ M  END
         "lstSymAPs": [],
         "vertexId": 8,
         "buildingBlockId": -99,
-        "buildingBlockType": "UNDEFINED",
+        "buildingBlockType": "FRAGMENT",
         "isRCV": false,
         "uniquefyingPropertyKeys": [],
         "allowedMutationTypes": [
@@ -383,7 +383,7 @@ M  END
         "lstSymAPs": [],
         "vertexId": 10,
         "buildingBlockId": -99,
-        "buildingBlockType": "UNDEFINED",
+        "buildingBlockType": "FRAGMENT",
         "isRCV": true,
         "uniquefyingPropertyKeys": [],
         "allowedMutationTypes": [
@@ -407,7 +407,7 @@ M  END
         "lstSymAPs": [],
         "vertexId": 11,
         "buildingBlockId": -99,
-        "buildingBlockType": "UNDEFINED",
+        "buildingBlockType": "FRAGMENT",
         "isRCV": true,
         "uniquefyingPropertyKeys": [],
         "allowedMutationTypes": [
@@ -431,7 +431,7 @@ M  END
         "lstSymAPs": [],
         "vertexId": 12,
         "buildingBlockId": -99,
-        "buildingBlockType": "UNDEFINED",
+        "buildingBlockType": "FRAGMENT",
         "isRCV": true,
         "uniquefyingPropertyKeys": [],
         "allowedMutationTypes": [
