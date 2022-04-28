@@ -1,0 +1,582 @@
+
+  CDK     04282223213D
+
+  5  4  0  0  0  0  0  0  0  0999 V2000
+   -0.0098    0.0049    0.6289 Pt  0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0006    0.0016    2.5609 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0025   -0.0041    3.6974 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0070    1.0013    0.6372 Du  0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0014    0.9902    2.5698 Du  0  0  0  0  0  0  0  0  0  0  0  0
+  2  3  3  0  0  0  0
+  1  2  1  0  0  0  0
+  4  1  1  0  0  0  0
+  5  2  1  0  0  0  0
+M  END
+> <ATTACHMENT_POINTS>
+
+
+> <GCODE>
+1
+
+> <GraphENC>
+1 1_1_0,2_EmptyVertex,3_EmptyVertex,4_EmptyVertex,5_EmptyVertex,7_EmptyVertex,8_EmptyVertex,10_EmptyVertex,11_EmptyVertex,12_EmptyVertex, 1_2_2_0_SINGLE_scaff:0_scaff:1,1_1_3_0_SINGLE_Xlig:0_Xlig:1,1_0_4_0_SINGLE_Xlig:0_Xlig:1,2_2_5_0_SINGLE_bridge:0_ATplus:0,4_1_7_0_SINGLE_bridge:0_bridge:1,3_1_8_0_SINGLE_bridge:0_bridge:1,8_1_10_0_SINGLE_bridge:1_ATminus:0,7_1_11_0_SINGLE_bridge:1_ATminus:0,2_1_12_0_SINGLE_bridge:0_ATplus:0, DENOPTIMRing [vertices=[10_EmptyVertex, 8_EmptyVertex, 3_EmptyVertex, 1_1_0, 2_EmptyVertex, 5_EmptyVertex]] DENOPTIMRing [vertices=[12_EmptyVertex, 2_EmptyVertex, 1_1_0, 4_EmptyVertex, 7_EmptyVertex, 11_EmptyVertex]] 
+
+> <GraphJson>
+{
+  "graphId": 1,
+  "gVertices": [
+    {
+      "lstAPs": [
+        {
+          "id": 341,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": 0,
+          "apClass": {
+            "rule": "Xlig",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": -2.3339,
+            "y": -0.0087,
+            "z": 0.8172
+          }
+        },
+        {
+          "id": 342,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": 0,
+          "apClass": {
+            "rule": "Xlig",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": 2.336,
+            "y": -5.0E-4,
+            "z": 0.829
+          }
+        },
+        {
+          "id": 343,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": 0,
+          "apClass": {
+            "rule": "scaff",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": -0.0095,
+            "y": 0.0046,
+            "z": -1.7113
+          }
+        }
+      ],
+      "lstSymAPs": [
+        {
+          "symIds": [
+            0,
+            1
+          ]
+        }
+      ],
+      "mol": {
+        "atoms": [
+          {
+            "elSymbol": "Pt",
+            "p3d": {
+              "x": -0.0098,
+              "y": 0.0049,
+              "z": 0.6289
+            }
+          },
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": -6.0E-4,
+              "y": 0.0016,
+              "z": 2.5609
+            }
+          },
+          {
+            "elSymbol": "O",
+            "p3d": {
+              "x": 0.0025,
+              "y": -0.0041,
+              "z": 3.6974
+            }
+          },
+          {
+            "elSymbol": "Du",
+            "p3d": {
+              "x": -0.007,
+              "y": 1.0013,
+              "z": 0.6372
+            }
+          },
+          {
+            "elSymbol": "Du",
+            "p3d": {
+              "x": -0.0014,
+              "y": 0.9902,
+              "z": 2.5698
+            }
+          }
+        ],
+        "bonds": [
+          {
+            "atomIds": [
+              1,
+              2
+            ],
+            "bo": "TRIPLE"
+          },
+          {
+            "atomIds": [
+              0,
+              1
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              3,
+              0
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              4,
+              1
+            ],
+            "bo": "SINGLE"
+          }
+        ]
+      },
+      "vertexId": 1,
+      "buildingBlockId": 0,
+      "buildingBlockType": "SCAFFOLD",
+      "isRCV": false,
+      "properties": {
+        "ATTACHMENT_POINTS": "1#Xlig:0:SINGLE:-2.3339%-0.0087%0.8172,Xlig:0:SINGLE:2.3360%-0.0005%0.8290,scaff:0:SINGLE:-0.0095%0.0046%-1.7113 "
+      },
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "MolecularFragment"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 353,
+          "atomPositionNumber": -1,
+          "atomPositionNumberInMol": 4,
+          "apClass": {
+            "rule": "scaff",
+            "subClass": 1,
+            "bndTyp": "SINGLE"
+          }
+        },
+        {
+          "id": 354,
+          "atomPositionNumber": -1,
+          "atomPositionNumberInMol": 4,
+          "apClass": {
+            "rule": "bridge",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          }
+        },
+        {
+          "id": 355,
+          "atomPositionNumber": -1,
+          "atomPositionNumberInMol": 4,
+          "apClass": {
+            "rule": "bridge",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "vertexId": 2,
+      "buildingBlockId": -99,
+      "buildingBlockType": "UNDEFINED",
+      "isRCV": false,
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "EmptyVertex"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 360,
+          "atomPositionNumber": -1,
+          "atomPositionNumberInMol": 4,
+          "apClass": {
+            "rule": "Xlig",
+            "subClass": 1,
+            "bndTyp": "SINGLE"
+          }
+        },
+        {
+          "id": 361,
+          "atomPositionNumber": -1,
+          "atomPositionNumberInMol": 4,
+          "apClass": {
+            "rule": "bridge",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "vertexId": 3,
+      "buildingBlockId": -99,
+      "buildingBlockType": "UNDEFINED",
+      "isRCV": false,
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "EmptyVertex"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 362,
+          "atomPositionNumber": -1,
+          "atomPositionNumberInMol": 4,
+          "apClass": {
+            "rule": "Xlig",
+            "subClass": 1,
+            "bndTyp": "SINGLE"
+          }
+        },
+        {
+          "id": 363,
+          "atomPositionNumber": -1,
+          "atomPositionNumberInMol": 4,
+          "apClass": {
+            "rule": "bridge",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "vertexId": 4,
+      "buildingBlockId": -99,
+      "buildingBlockType": "UNDEFINED",
+      "isRCV": false,
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "EmptyVertex"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 366,
+          "atomPositionNumber": -1,
+          "atomPositionNumberInMol": 4,
+          "apClass": {
+            "rule": "ATplus",
+            "subClass": 0,
+            "bndTyp": "ANY"
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "vertexId": 5,
+      "buildingBlockId": -99,
+      "buildingBlockType": "UNDEFINED",
+      "isRCV": true,
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "EmptyVertex"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 404,
+          "atomPositionNumber": -1,
+          "atomPositionNumberInMol": 4,
+          "apClass": {
+            "rule": "bridge",
+            "subClass": 1,
+            "bndTyp": "SINGLE"
+          }
+        },
+        {
+          "id": 405,
+          "atomPositionNumber": -1,
+          "atomPositionNumberInMol": 4,
+          "apClass": {
+            "rule": "bridge",
+            "subClass": 1,
+            "bndTyp": "SINGLE"
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "vertexId": 7,
+      "buildingBlockId": -99,
+      "buildingBlockType": "UNDEFINED",
+      "isRCV": false,
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "EmptyVertex"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 406,
+          "atomPositionNumber": -1,
+          "atomPositionNumberInMol": 4,
+          "apClass": {
+            "rule": "bridge",
+            "subClass": 1,
+            "bndTyp": "SINGLE"
+          }
+        },
+        {
+          "id": 407,
+          "atomPositionNumber": -1,
+          "atomPositionNumberInMol": 4,
+          "apClass": {
+            "rule": "bridge",
+            "subClass": 1,
+            "bndTyp": "SINGLE"
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "vertexId": 8,
+      "buildingBlockId": -99,
+      "buildingBlockType": "UNDEFINED",
+      "isRCV": false,
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "EmptyVertex"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 421,
+          "atomPositionNumber": -1,
+          "atomPositionNumberInMol": 4,
+          "apClass": {
+            "rule": "ATminus",
+            "subClass": 0,
+            "bndTyp": "ANY"
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "vertexId": 10,
+      "buildingBlockId": -99,
+      "buildingBlockType": "UNDEFINED",
+      "isRCV": true,
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "EmptyVertex"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 455,
+          "atomPositionNumber": -1,
+          "atomPositionNumberInMol": 4,
+          "apClass": {
+            "rule": "ATminus",
+            "subClass": 0,
+            "bndTyp": "ANY"
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "vertexId": 11,
+      "buildingBlockId": -99,
+      "buildingBlockType": "UNDEFINED",
+      "isRCV": true,
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "EmptyVertex"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 458,
+          "atomPositionNumber": -1,
+          "atomPositionNumberInMol": 4,
+          "apClass": {
+            "rule": "ATplus",
+            "subClass": 0,
+            "bndTyp": "ANY"
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "vertexId": 12,
+      "buildingBlockId": -99,
+      "buildingBlockType": "UNDEFINED",
+      "isRCV": true,
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "EmptyVertex"
+    }
+  ],
+  "gEdges": [
+    {
+      "srcAPID": 343,
+      "trgAPID": 353,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 342,
+      "trgAPID": 360,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 341,
+      "trgAPID": 362,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 355,
+      "trgAPID": 366,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 363,
+      "trgAPID": 404,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 361,
+      "trgAPID": 406,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 407,
+      "trgAPID": 421,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 405,
+      "trgAPID": 455,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 354,
+      "trgAPID": 458,
+      "bondType": "SINGLE"
+    }
+  ],
+  "gRings": [
+    {
+      "vertices": [
+        10,
+        8,
+        3,
+        1,
+        2,
+        5
+      ],
+      "bndTyp": "SINGLE"
+    },
+    {
+      "vertices": [
+        12,
+        2,
+        1,
+        4,
+        7,
+        11
+      ],
+      "bndTyp": "SINGLE"
+    }
+  ],
+  "symVertices": []
+}
+
+$$$$
