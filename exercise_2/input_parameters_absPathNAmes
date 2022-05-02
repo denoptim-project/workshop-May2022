@@ -18,10 +18,11 @@ GA-ReplacementStrategy=ELITIST
 GA-NumParallelTasks=4
 GA-Parallelization=Synchronous
 # Building Blocks Space - parameters
-FS-ScaffoldLibFile=lib_scaffolds_w_chelation_template.sdf
-FS-FragmentLibFile=lib_fragments.sdf
-FS-CappingFragmentLibFile=lib_capping-groups.sdf
-FS-CompMatrixFile=compatibility_matrix.par
+FS-ScaffoldLibFile=/Users/marcof/denoptim_workshop/exercise_2/lib_scaffolds_w_chelation_template.sdf
+FS-FragmentLibFile=/Users/marcof/denoptim_workshop/exercise_2/lib_fragments.sdf
+FS-CappingFragmentLibFile=/Users/marcof/denoptim_workshop/exercise_2/lib_capping-groups.sdf
+FS-CompMatrixFile=/Users/marcof/denoptim_workshop/exercise_2/compatibility_matrix.par
+FS-RotBondsDefFile=/Users/marcof/denoptim_workshop/exercise_2/rotatableBonds-1.0
 FS-MaxMW=3000
 FS-ConstrainSymmetry=LBisAminoPhosphineN:0 1.0
 FS-ConstrainSymmetry=LTrisAminoPhosphineN:0 1.0

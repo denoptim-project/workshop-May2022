@@ -1,5 +1,5 @@
 # Compatibility matrix data
-# Written by DENOPTIM-GUI on 29/04/22 00:20:53
+# Written by DENOPTIM-GUI on 01/05/22 22:39:24
 # APCLass Compatibility rules
 RCN AminoPhosphineSubN:0 SubRS:1,SubRM:1,SubArS:1,ATplus:0
 RCN AminoPhosphineSubNL:0 SubRL:1,SubArS:1,SubArL:1,ATplus:0
@@ -31,14 +31,16 @@ RCN LPyrrolidinylideneSubCAlpha:0 LPyrrolidinylideneSubCAlpha:1
 RCN LPyrrolidinylideneSubCGammaL:0 LPyrrolidinylideneSubCGammaS:1,LPyrrolidinylideneSubCGammaL:1
 RCN LPyrrolidinylideneSubCGammaS:0 LPyrrolidinylideneSubCGammaS:1
 RCN LPyrrolidinylideneSubNS:0 SubArS:1,SubArM:1,SubArL:1
+RCN LPyridineAlpha:0 SubRS:1,SubRM:1,SubRL:1,SubArS:1,SubArM:1,SubArL:1,ATplus:0
 RCN LTrisAminoPhosphineN:0 LAminoPhosphineCycloN:1,ATplus:0
 RCN OPhosphiniteSub:1 SubRS:1,SubRM:1,SubArS:1,SubArM:1,SubArL:1,ATplus:0
 RCN OPhosphiteSub:1 SubRS:1,SubRM:1,SubRL:1,SubArS:1,SubArM:1,SubArL:1,ATplus:0
 RCN OPhosphoniteSub:1 SubRS:1,SubArS:1,SubArL:1,ATplus:0
+RCN SubBridge:0 SubArL:1,SubArM:1,SubArS:1,SubRL:1,SubRM:1,SubRS:1
+RCN SubBridgeArS:0 SubArS:1,SubRS:1
 RCN Xlig:0 Xlig:1
-RCN bridge:0 bridge:1
 RCN bridge:1 bridge:0,ATminus:0
-RCN scaff:0 M6HPyrimidinylidene:1,MPyrrolidinylidene:1,MIsoindolylidene:1,MImidazolidinylidene:1,MImidazolylidene:1,MBisAminoPhosphine:1,MMonoAminoPhosphine:1,MPhosphine:1,MPhosphinite:1,MPhosphite:1,MPhosphole:1,MPhosphonite:1,MTrisAminoPhosphine:1
+RCN scaff:0 M6HPyrimidinylidene:1,MPyrrolidinylidene:1,MIsoindolylidene:1,MImidazolidinylidene:1,MImidazolylidene:1,MBisAminoPhosphine:1,MMonoAminoPhosphine:1,MPhosphine:1,MPhosphinite:1,MPhosphite:1,MPhosphole:1,MPhosphonite:1,MTrisAminoPhosphine:1,MPyridine:1
 # Capping rules
 CAP AminoPhosphineSubN:0 me:1
 CAP AminoPhosphineSubNL:0 me:1
@@ -63,6 +65,7 @@ CAP LPhospholeSubBeta:0 hyd:1
 CAP LPhospholeSubR:0 me:1
 CAP LPhosphoniteSubO:1 me:1
 CAP LPhosphoniteSubR:0 me:1
+CAP LPyridineAlpha:0 me:1
 CAP LPyrrolidinylideneSubCAlpha:0 me:1
 CAP LPyrrolidinylideneSubCGammaL:0 me:1
 CAP LPyrrolidinylideneSubCGammaS:0 me:1
@@ -70,6 +73,7 @@ CAP LPyrrolidinylideneSubNS:0 ph:1
 CAP OPhosphiniteSub:1 me:1
 CAP OPhosphiteSub:1 me:1
 CAP OPhosphoniteSub:1 me:1
+CAP bridge:0 hyd:1
 CAP sArCl:1 hyd:1
 # Forbidden ends
 DEL LBisAminoPhosphineN:0 
