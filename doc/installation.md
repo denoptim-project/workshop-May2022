@@ -1,48 +1,17 @@
 # Installation
 The goal of the present instructions is to prepare your machine for the hand-on exercises of the workshop. To this end, we will:
 * ensure you have **conda** on your system, or install it,
-* create an environment for running **denoptim**,
+* create an environment for running **DENOPTIM**,
 * download data sets needed for the exercises.
 
-Since **conda** is extremely popular in data sciences, chances are you already have it installed and know how to use it. In this case, you can jump directly to the section [Create DENOPTIM Environment](#Create_DENOPTIM_Environment).
+Since **conda** is extremely popular in data sciences, chances are you already have it installed and know how to use it. In this case, you can jump directly to the section Create DENOPTIM Environment, below.
 
 The instructions are inspired by and derived from work by [Software Carpentry](http://software-carpentry.org) and [CodeRefinery](https://coderefinery.org/) which is licensed under the terms of the [Creative Commons Attribution license 4.0](https://creativecommons.org/licenses/by-sa/4.0/). 
 
 ## Command line
-On **macOS/Linux** you can use the default Terminal and skipp this section.
-On **Windows you** can install GitBash following the steps below or by watching the
+On **macOS/Linux** you can use the default Terminal and skip this section.
+On **Windows you** can [Git for Windows installer](https://gitforwindows.org/) following the steps in the
   [Carpentries video tutorial](https://www.youtube-nocookie.com/embed/339AEqk9c-8?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0).
-
-  - Download the [Git for Windows installer](https://gitforwindows.org/).
-  - Run the installer and follow the steps below:
-    1.  Click on "Next" four times (two times if you've previously
-        installed Git).  You don't need to change anything
-        in the Information, location, components, and start menu screens.
-    2.  **From the dropdown menu select "Use the Nano editor by default"
-        (NOTE: you will need to scroll <emph>up</emph> to find it) and click on "Next".**
-    3.  On the page that says "Adjusting the name of the initial branch in new repositories", ensure that
-        "Let Git decide" is selected. This will ensure the highest level of compatibility for our lessons.
-    4.  Ensure that "Git from the command line and also from 3rd-party software" is selected and
-        click on "Next". (If you don't do this Git Bash will not work properly, requiring you to
-        remove the Git Bash installation, re-run the installer and to select the "Git from the
-        command line and also from 3rd-party software" option.)
-    5.  Ensure that "Use the native Windows Secure Channel Library" is selected and click on "Next".
-    6.  Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".
-    7.  **Ensure that "Use Windows' default console window" is selected and click on "Next".**
-    8.  Ensure that "Default (fast-forward or merge) is selected and click "Next"
-    9.  Ensure that "Git Credential Manager <strong>Core</strong>" is selected and click on "Next".
-    10. Ensure that "Enable file system caching" is selected and click on "Next".
-    11. Click on "Install".
-    12. Click on "Finish" or "Next".
-  - If your "HOME" environment variable is not set (or you don't know what this is):
-    1.  Open command prompt (Open Start Menu then type `cmd` and press enter)
-    2.  Type the following line into the command prompt window exactly as shown: `setx HOME "%USERPROFILE%"`
-    3.  Press enter, you should see `SUCCESS: Specified value was saved.`
-    4.  Quit command prompt by typing `exit` then pressing enter.
-
-  This will provide you with both Git and Bash in the Git Bash program. You can then start it by searching for "Git Bash" in your Start menu.
-
-  *Text copied and adapted from: [the Carpentries set up page](https://carpentries.github.io/workshop-template/#shell)*
 
 
 ## Install Conda
@@ -51,8 +20,8 @@ Miniconda (and Anaconda, too) comes with a complete Python distribution that let
 you create isolated **environments** that don't affect anything else.
 **conda** is the tool that manages these environments.
 
-### Do I have conda?
-On **macOS/Linux**, open a Terminal and run the following command. On **Windows**, open the Anaconda promt from the Windows search bar (if Anaconda Prompt is not found, then install Miniconda as shown below): 
+### Do I Have Conda?
+On **macOS/Linux**, open a Terminal and run the following command. On **Windows**, open the Anaconda prompt from the Windows search bar (if Anaconda Prompt is not found, then install Miniconda as shown below): 
 
 ```conda list```
 
@@ -147,7 +116,7 @@ If you wish to remove Conda again after the workshop, here is how:
 
 ## Create DENOPTIM Environment
 
-We now ask **conda** to create a dedicated environment for the workshow. The environment required **DENOPTIM** do **conda** will install is and make it available within such environment.
+We now ask **conda** to create a dedicated environment for the workshop. The environment required **DENOPTIM** do **conda** will install is and make it available within such environment.
 1. Open a new terminal (macOS/Linux) or a new GitBash (Windows) after having completed the installation of **conda**.
 2. If you have not, activate `conda` in Miniconda first using `conda activate` or `source ~/miniconda3/bin/activate`. If neither works, please first follow {ref}`setting-conda-path`. You probably need to restart your shell terminal. Then try `conda activate` or `source ~/miniconda3/bin/activate` again.
 3. Run the following command:
