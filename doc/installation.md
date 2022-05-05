@@ -4,12 +4,48 @@ The goal of the present instructions is to prepare your machine for the hand-on 
 * create an environment for running **denoptim**,
 * download data sets needed for the exercises.
 
+Since **conda** is extremely popular in data sciences, chances are you already have it installed and know how to use it. In this case, you can jump directly to the section [Create DENOPTIM Environment](#Create_DENOPTIM_Environment).
+
 The instructions are inspired by and derived from work by [Software Carpentry](http://software-carpentry.org) and [CodeRefinery](https://coderefinery.org/) which is licensed under the terms of the [Creative Commons Attribution license 4.0](https://creativecommons.org/licenses/by-sa/4.0/). 
 
 ## Command line
-On macOS/Linux we will use the Terminal, which is already
+On **macOS/Linux** you can use the default Terminal and skipp this section.
+On **Windows you** can install GitBash following the steps below or by watching the
+  [Carpentries video tutorial](https://www.youtube-nocookie.com/embed/339AEqk9c-8?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0).
 
-## Conda
+  - Download the [Git for Windows installer](https://gitforwindows.org/).
+  - Run the installer and follow the steps below:
+    1.  Click on "Next" four times (two times if you've previously
+        installed Git).  You don't need to change anything
+        in the Information, location, components, and start menu screens.
+    2.  **From the dropdown menu select "Use the Nano editor by default"
+        (NOTE: you will need to scroll <emph>up</emph> to find it) and click on "Next".**
+    3.  On the page that says "Adjusting the name of the initial branch in new repositories", ensure that
+        "Let Git decide" is selected. This will ensure the highest level of compatibility for our lessons.
+    4.  Ensure that "Git from the command line and also from 3rd-party software" is selected and
+        click on "Next". (If you don't do this Git Bash will not work properly, requiring you to
+        remove the Git Bash installation, re-run the installer and to select the "Git from the
+        command line and also from 3rd-party software" option.)
+    5.  Ensure that "Use the native Windows Secure Channel Library" is selected and click on "Next".
+    6.  Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".
+    7.  **Ensure that "Use Windows' default console window" is selected and click on "Next".**
+    8.  Ensure that "Default (fast-forward or merge) is selected and click "Next"
+    9.  Ensure that "Git Credential Manager <strong>Core</strong>" is selected and click on "Next".
+    10. Ensure that "Enable file system caching" is selected and click on "Next".
+    11. Click on "Install".
+    12. Click on "Finish" or "Next".
+  - If your "HOME" environment variable is not set (or you don't know what this is):
+    1.  Open command prompt (Open Start Menu then type `cmd` and press enter)
+    2.  Type the following line into the command prompt window exactly as shown: `setx HOME "%USERPROFILE%"`
+    3.  Press enter, you should see `SUCCESS: Specified value was saved.`
+    4.  Quit command prompt by typing `exit` then pressing enter.
+
+  This will provide you with both Git and Bash in the Git Bash program. You can then start it by searching for "Git Bash" in your Start menu.
+
+  *Text copied and adapted from: [the Carpentries set up page](https://carpentries.github.io/workshop-template/#shell)*
+
+
+## Install Conda
 
 Miniconda (and Anaconda, too) comes with a complete Python distribution that lets
 you create isolated **environments** that don't affect anything else.
@@ -45,7 +81,6 @@ If you have conda installed, a list of packages will be printed and you can skip
     - [macOS](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/macos.html#updating-anaconda-or-miniconda)
     - [Linux](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/linux.html#updating-anaconda-or-miniconda)
 
-(setting-conda-path)=
 
 ### Setting path to Conda from your terminal shell 
 
@@ -110,8 +145,8 @@ If you wish to remove Conda again after the workshop, here is how:
 - [Linux](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/linux.html#uninstalling-anaconda-or-miniconda)
 
 
-## DENOPTIM
-(dnp-environment)=
+## Create DENOPTIM Environment
+
 We now ask **conda** to create a dedicated environment for the workshow. The environment required **DENOPTIM** do **conda** will install is and make it available within such environment.
 1. Open a new terminal (macOS/Linux) or a new GitBash (Windows) after having completed the installation of **conda**.
 2. If you have not, activate `conda` in Miniconda first using `conda activate` or `source ~/miniconda3/bin/activate`. If neither works, please first follow {ref}`setting-conda-path`. You probably need to restart your shell terminal. Then try `conda activate` or `source ~/miniconda3/bin/activate` again.
@@ -128,14 +163,14 @@ conda env list
 
 In the workshop, we will ask you to activate this environment. 
 
-First, follow the steps 1 and 2 in {ref}`the above section <dnp-environment>` (i.e. open your terminal shell and activate `conda`).
+First, follow the steps 1 and 2 above (i.e. open your terminal shell and activate `conda`).
 Then run the following:
-```shell
+```
 conda activate dnp_workshop
 ```
 
 If this does not work, the `dnp_workshop` part should be replaced with the whole path, for example:
-```shell
+```
 source activate ~/Miniconda3/envs/coderefinery
 ```
 
@@ -143,19 +178,19 @@ source activate ~/Miniconda3/envs/coderefinery
 ### How to verify the environment
 
 Once activated, try the following 5 commands:
-```shell
+```
 denoptim -v
 ```
 
 You should see an output like this and not see errors (exact version numbers are not too important):
-```text
+```
 V3.1.0
 ```
 
 
 ### Deactivating the `dnp_workshop` environment
 Deactivating will remove the `denoptim` command, so it is an operation meant for when you are done working with the software. After deactivating, you can always re-activate the environment again.
-```shell
+```
 conda deactivate
 ```
 
