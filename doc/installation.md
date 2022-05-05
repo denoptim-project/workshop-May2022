@@ -4,9 +4,7 @@ The goal of the present instructions is to prepare your machine for the hand-on 
 * create an environment for running **denoptim**,
 * download data sets needed for the exercises.
 
-```{note}
 The instructions are inspired by and derived from work by [Software Carpentry](http://software-carpentry.org) and [CodeRefinery](https://coderefinery.org/) which is licensed under the terms of the [Creative Commons Attribution license 4.0](https://creativecommons.org/licenses/by-sa/4.0/). 
-```
 
 ## Command line
 On macOS/Linux we will use the Terminal, which is already
