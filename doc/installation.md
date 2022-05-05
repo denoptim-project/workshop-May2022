@@ -118,7 +118,7 @@ If you wish to remove Conda again after the workshop, here is how:
 
 We now ask **conda** to create a dedicated environment for the workshop. The environment required **DENOPTIM** do **conda** will install is and make it available within such environment.
 1. Open a new terminal (macOS/Linux) or a new GitBash (Windows) after having completed the installation of **conda**.
-2. If you have not, activate `conda` in Miniconda first using `conda activate` or `source ~/miniconda3/bin/activate`. If neither works, please first follow {ref}`setting-conda-path`. You probably need to restart your shell terminal. Then try `conda activate` or `source ~/miniconda3/bin/activate` again.
+2. If you have not done so during the installation of Miniconda (see above), activate `conda` in Miniconda first using `conda activate` or `source ~/miniconda3/bin/activate`. If neither works, please go back to the installation section. You probably need to restart your shell terminal. Then try `conda activate` or `source ~/miniconda3/bin/activate` again.
 3. Run the following command:
 ```
 conda env create -f  https://raw.githubusercontent.com/denoptim-project/workshop-May2022/main/environment.yml
