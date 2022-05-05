@@ -22,7 +22,6 @@
 
 import os
 import sys
-import tarfile
 
 # Parse command line arguments
 inpSDF=sys.argv[1]
@@ -34,7 +33,6 @@ UIDFILE=sys.argv[5]
 molName=os.path.basename(inpSDF).replace("_inp.sdf","")
 log=os.path.join(os.path.dirname(inpSDF), molName + "_FProvider.log")
 preliminaryOutput=os.path.join(os.path.dirname(inpSDF), molName + "_preOut.sdf")
-preliminaryOutputB=os.path.join(os.path.dirname(inpSDF), molName + "_preOutB.sdf")
 
 sys.stdout = open(log, 'w')
 print("Log of fitness provider task for "+molName)
@@ -42,7 +40,6 @@ print("Log of fitness provider task for "+molName)
 # Pathnames to the sources of data
 uidToAtomClash=os.path.join(os.path.dirname(os.path.abspath(os.path.realpath(__file__))),"UIDsToAtomClash")
 uidToFitness=os.path.join(os.path.dirname(os.path.abspath(os.path.realpath(__file__))),"UIDsToFitness")
-archive=os.path.join(os.path.dirname(os.path.abspath(os.path.realpath(__file__))),"pre-computed_geometries.tar.gz")
 
 os.chdir(wrkDir)
 print("cwd: "+os.getcwd());
@@ -50,7 +47,7 @@ print("Using map UiD-to-Fitness:     "+uidToFitness);
 print("Using map UiD-to-AtomClashes: "+uidToAtomClash);
 
 if not os.path.isfile(inpSDF):
-    print("Cannot find file '%s'" % inpSDF)
+    print("Cannot find file '%s'" % filename)
     sys.stdout.close()
     sys.exit(1)
 
@@ -67,7 +64,7 @@ def copySDFandAddProperty(inputSDF, outputSDF, propName, propValue):
     outfile.close()
 
 def exitWithError(msg, status):
-    copySDFandAddProperty(inpSDF, preliminaryOutput,"MOL_ERROR",msg)
+    copySDFandAddProperty(inpSDF,preliminaryOutput,"MOL_ERROR",msg)
     os.rename(preliminaryOutput,outSDF)
     print("Exiting with error: "+msg)
     sys.stdout.close()
@@ -86,13 +83,11 @@ if (not foundUid):
     exitWithError("#UID: not found",0)
 print("Found candidate's UID: "+uid)
 
-nameInArchive=""
 # Some candidate led to atom chalshes during molecular modeling, so do not have a fitness
 # Is this candidate one of them?
 with open(uidToAtomClash, "r") as atomClashingUIDs:
     for line in atomClashingUIDs:
         if re.search(uid, line):
-            nameInArchive = line.strip().split()[1]
             exitWithError("#AtomClash: Found Atom Clashes",0)
             
 # Recover the fitness of the candidate, if available.
@@ -102,7 +97,6 @@ with open(uidToFitness, "r") as knownUIDs:
         if re.search(uid, line):
             print("Found fitness value: "+line.strip())
             fitness=line.strip().split()[1]
-            nameInArchive = line.strip().split()[2]
             foundFitness=True
             copySDFandAddProperty(inpSDF,preliminaryOutput,"FITNESS",fitness)
             break
@@ -111,35 +105,7 @@ with open(uidToFitness, "r") as knownUIDs:
 if (not foundFitness):
     exitWithError("#FITNESS: not found",0)
 
-# Recover the 3D model from the archive
-preOutB = open(preliminaryOutputB,'w')
-preOutB.write(nameInArchive + os.linesep)
-with tarfile.open(archive, "r:gz") as tar:
-    for member in tar.getmembers():
-        if nameInArchive in member.name:
-            print("Found!");
-            f = tar.extractfile(member)
-            if f is not None:
-                f.readline()
-                for line in f.readlines():
-                    if 'M  END' in line.decode():
-                        break
-                    preOutB.write(line.decode())
-
-# Append all the fields
-preOut = open(preliminaryOutput,'r')
-keepLine=False
-for line in preOut:
-    if "M  END" in line:
-        keepLine=True
-    if keepLine:
-        preOutB.write(line)
-preOut.close()
-preOutB.close()
-
-
 print("All done. Returning "+outSDF)
-os.remove(preliminaryOutput)
-os.rename(preliminaryOutputB, outSDF)
+os.rename(preliminaryOutput, outSDF)
 sys.stdout.close()
 sys.exit(0)
