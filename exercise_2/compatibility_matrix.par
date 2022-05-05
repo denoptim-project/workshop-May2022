@@ -5,7 +5,7 @@ RCN AminoPhosphineSubN:0 SubRS:1,SubRM:1,SubArS:1,ATplus:0
 RCN AminoPhosphineSubNL:0 SubRL:1,SubArS:1,SubArL:1,ATplus:0
 RCN L6HPyrimidinylideneSubN:0 SubRS:1,SubRM:1,SubRL:1,SubArS:1,SubArM:1,SubArL:1,ATplus:0
 RCN LBisAminoPhosphineN:0 LAminoPhosphineCycloN:1,LAminoPhosphineN:1,LAminoPhosphineNH:1,ATplus:0
-RCN LBisAminoPhosphineSubR:0 SubRS:1,SubRM:1,SubArS:1,SubArL:1,ATplus:0
+RCN LBisAminoPhosphineSubR:0 SubRS:1,SubRM:1,SubArS:1,SubArL:1
 RCN LCycloBisAminoPhosphineSubN:0 SubRS:1,SubRM:1,SubArS:1,SubArL:1,ATplus:0
 RCN LCycloBisAminoPhospholeSubN:0 SubRS:1,SubRM:1,SubArS:1,SubArL:1,ATplus:0
 RCN LImidazolidinylideneSubCL:0 SubRS:1,SubRM:1,SubRL:1,SubArS:1
@@ -15,7 +15,7 @@ RCN LImidazolylideneSubCS:0 LImidazolylideneSubCS:1
 RCN LImidazolylideneSubNL:0 SubRS:1,SubRM:1,SubRL:1,SubArS:1,SubArM:1,SubArL:1,ATplus:0
 RCN LIsoindolylideneSubCS:0 LIsoindolylideneSubCS:1
 RCN LIsoindolylideneSubNL:0 SubRS:1,SubRM:1,SubRL:1,SubArS:1,SubArM:1,SubArL:1,ATplus:0
-RCN LMonoAminoPhosphineN:0 LAminoPhosphineCycloN:1,LAminoPhosphineN:1,LAminoPhosphineNH:1,ATplus:0
+RCN LMonoAminoPhosphineN:0 LAminoPhosphineCycloN:1,LAminoPhosphineN:1,LAminoPhosphineNH:1
 RCN LMonoAminoPhosphineSubR:0 SubRS:1,SubRM:1,SubArS:1,SubArM:1,ATplus:0
 RCN LPhosphineSubM:0 SubRS:1,SubRM:1,SubRL:1,SubArS:1,SubArM:1,SubArL:1,ATplus:0
 RCN LPhosphineSubMSym:0 SubRS:1,SubRM:1,SubRL:1,SubArS:1,SubArM:1,SubArL:1,ATplus:0
@@ -36,10 +36,12 @@ RCN LTrisAminoPhosphineN:0 LAminoPhosphineCycloN:1,ATplus:0
 RCN OPhosphiniteSub:1 SubRS:1,SubRM:1,SubArS:1,SubArM:1,SubArL:1,ATplus:0
 RCN OPhosphiteSub:1 SubRS:1,SubRM:1,SubRL:1,SubArS:1,SubArM:1,SubArL:1,ATplus:0
 RCN OPhosphoniteSub:1 SubRS:1,SubArS:1,SubArL:1,ATplus:0
-RCN SubBridge:0 SubArL:1,SubArM:1,SubArS:1,SubRL:1,SubRM:1,SubRS:1
+RCN SubBridge:0 SubArM:1,SubArS:1,SubRM:1,SubRS:1
 RCN SubBridgeArS:0 SubArS:1,SubRS:1
+RCN LCarboxamido:0 SubArS:1
 RCN Xlig:0 Xlig:1
-RCN bridge:1 bridge:0,ATminus:0
+RCN bridge:0 ATminus:0
+RCN bridge:1 bridge:0
 RCN scaff:0 M6HPyrimidinylidene:1,MPyrrolidinylidene:1,MIsoindolylidene:1,MImidazolidinylidene:1,MImidazolylidene:1,MBisAminoPhosphine:1,MMonoAminoPhosphine:1,MPhosphine:1,MPhosphinite:1,MPhosphite:1,MPhosphole:1,MPhosphonite:1,MTrisAminoPhosphine:1,MPyridine:1
 # Capping rules
 CAP AminoPhosphineSubN:0 me:1
@@ -75,6 +77,9 @@ CAP OPhosphiteSub:1 me:1
 CAP OPhosphoniteSub:1 me:1
 CAP bridge:0 hyd:1
 CAP sArCl:1 hyd:1
+CAP SubBridge:0 hyd:1
+CAP SubBridgeArS:0 hyd:1
+CAP LCarboxamido:0 ph:1
 # Forbidden ends
 DEL LBisAminoPhosphineN:0 
 DEL LMonoAminoPhosphineN:0 

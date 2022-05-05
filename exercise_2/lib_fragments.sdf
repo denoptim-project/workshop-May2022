@@ -1649,66 +1649,6 @@ $$$$
 
   CDK     02102219043D
 
-  5  4  0  0  0  0  0  0  0  0999 V2000
-   -0.3267    2.3403   -1.0022 S   0  0  0  0  0  0  0  0  0  0  0  0
-   -0.6260    2.4866    0.7805 C   0  0  0  0  0  0  0  0  0  0  0  0
-    0.1766    3.0890    1.2414 H   0  0  0  0  0  0  0  0  0  0  0  0
-   -0.6510    1.5065    1.2643 H   0  0  0  0  0  0  0  0  0  0  0  0
-   -1.5658    2.9810    0.9515 H   0  0  0  0  0  0  0  0  0  0  0  0
-  2  3  1  0  0  0  0 
-  2  4  1  0  0  0  0 
-  2  5  1  0  0  0  0 
-  1  2  1  0  0  0  0 
-M  END
-> <ATTACHMENT_POINTS>
-1#Xlig:1:SINGLE:-0.1020%0.0185%-1.0265 
-
-$$$$
-
-  CDK     02102219043D
-
-  5  4  0  0  0  0  0  0  0  0999 V2000
-   -0.3534    2.1044   -0.7339 O   0  0  0  0  0  0  0  0  0  0  0  0
-   -0.5345    2.7646    0.4801 C   0  0  0  0  0  0  0  0  0  0  0  0
-   -0.3728    3.8337    0.2724 H   0  0  0  0  0  0  0  0  0  0  0  0
-    0.1816    2.4161    1.2384 H   0  0  0  0  0  0  0  0  0  0  0  0
-   -1.5530    2.6149    0.8489 H   0  0  0  0  0  0  0  0  0  0  0  0
-  2  3  1  0  0  0  0 
-  2  4  1  0  0  0  0 
-  2  5  1  0  0  0  0 
-  1  2  1  0  0  0  0 
-M  END
-> <ATTACHMENT_POINTS>
-1#Xlig:1:SINGLE:-0.1753%0.0948%-0.4464 
-
-$$$$
-
-  CDK     02102219043D
-
-  3  2  0  0  0  0  0  0  0  0999 V2000
-   -1.9670   -0.0075   -0.4937 C   0  0  0  0  0  0  0  0  0  0  0  0
-   -3.1263   -0.0054   -0.4354 N   0  0  0  0  0  0  0  0  0  0  0  0
-   -1.9744    0.9926   -0.5036 Du  0  0  0  0  0  0  0  0  0  0  0  0
-  1  2  3  0  0  0  0 
-  3  1  1  0  0  0  0 
-M  END
-> <ATTACHMENT_POINTS>
-1#Xlig:1:SINGLE:0.0192%-0.0048%-0.5645 
-
-$$$$
-
-  CDK     02102219043D
-
-  1  0  0  0  0  0  0  0  0  0999 V2000
-    2.3243   -0.0063    0.8189 Cl  0  0  0  0  0  0  0  0  0  0  0  0
-M  END
-> <ATTACHMENT_POINTS>
-1#Xlig:1:SINGLE:-0.0053%-0.0027%0.6300 
-
-$$$$
-
-  CDK     02102219043D
-
  12 12  0  0  0  0  0  0  0  0999 V2000
     3.3266   11.1346   13.1445 N   0  0  0  0  0  0  0  0  0  0  0  0
     3.8396   13.0125   14.3399 N   0  0  0  0  0  0  0  0  0  0  0  0
@@ -4655,6 +4595,134 @@ M  END
   "isRCV": false,
   "properties": {
     "ATTACHMENT_POINTS": "1#bridge:1:SINGLE:3.1219%7.0322%12.5700 2#Xlig:1:SINGLE:5.9830%5.6590%10.7602 "
+  },
+  "uniquefyingPropertyKeys": [],
+  "allowedMutationTypes": [
+    "DELETE",
+    "EXTEND",
+    "CHANGEBRANCH",
+    "CHANGELINK",
+    "ADDLINK",
+    "DELETELINK",
+    "DELETECHAIN"
+  ],
+  "vertexType": "MolecularFragment"
+}
+
+$$$$
+
+  CDK     05042200303D
+
+  3  2  0  0  0  0  0  0  0  0999 V2000
+   14.8537   10.7051    5.4554 C   0  0  0  0  0  0  0  0  0  0  0  0
+   14.3788   11.1517    4.2759 N   0  0  0  0  0  0  0  0  0  0  0  0
+   15.5618   11.2997    6.2837 O   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  3  1  2  0  0  0  0
+M  END
+> <ATTACHMENT_POINTS>
+1#bridge:1:SINGLE:14.9402%9.2356%5.5339 2#Xlig:1:SINGLE:13.4931%9.7555%3.1138,LCarboxamido:0:SINGLE:14.7807%12.5016%3.9191
+
+> <VertexJson>
+{
+  "lstAPs": [
+    {
+      "id": 3,
+      "atomPositionNumber": 1,
+      "atomPositionNumberInMol": -1,
+      "apClass": {
+        "rule": "Xlig",
+        "subClass": 1,
+        "bndTyp": "SINGLE"
+      },
+      "dirVec": {
+        "x": 13.4931,
+        "y": 9.7555,
+        "z": 3.1138
+      }
+    },
+    {
+      "id": 8,
+      "atomPositionNumber": 0,
+      "atomPositionNumberInMol": -1,
+      "apClass": {
+        "rule": "bridge",
+        "subClass": 1,
+        "bndTyp": "SINGLE"
+      },
+      "dirVec": {
+        "x": 14.9402,
+        "y": 9.2356,
+        "z": 5.5339
+      }
+    },
+    {
+      "id": 464,
+      "atomPositionNumber": 1,
+      "atomPositionNumberInMol": -1,
+      "apClass": {
+        "rule": "LCarboxamido",
+        "subClass": 0,
+        "bndTyp": "SINGLE"
+      },
+      "dirVec": {
+        "x": 14.7807,
+        "y": 12.5016,
+        "z": 3.9191
+      }
+    }
+  ],
+  "lstSymAPs": [],
+  "mol": {
+    "atoms": [
+      {
+        "elSymbol": "C",
+        "p3d": {
+          "x": 14.8537,
+          "y": 10.7051,
+          "z": 5.4554
+        }
+      },
+      {
+        "elSymbol": "N",
+        "p3d": {
+          "x": 14.3788,
+          "y": 11.1517,
+          "z": 4.2759
+        }
+      },
+      {
+        "elSymbol": "O",
+        "p3d": {
+          "x": 15.5618,
+          "y": 11.2997,
+          "z": 6.2837
+        }
+      }
+    ],
+    "bonds": [
+      {
+        "atomIds": [
+          0,
+          1
+        ],
+        "bo": "SINGLE"
+      },
+      {
+        "atomIds": [
+          2,
+          0
+        ],
+        "bo": "DOUBLE"
+      }
+    ]
+  },
+  "vertexId": -1,
+  "buildingBlockId": -99,
+  "buildingBlockType": "FRAGMENT",
+  "isRCV": false,
+  "properties": {
+    "ATTACHMENT_POINTS": "1#bridge:1:SINGLE:14.9402%9.2356%5.5339 2#Xlig:1:SINGLE:13.4931%9.7555%3.1138,LCarboxamido:0:SINGLE:14.7807%12.5016%3.9191 "
   },
   "uniquefyingPropertyKeys": [],
   "allowedMutationTypes": [

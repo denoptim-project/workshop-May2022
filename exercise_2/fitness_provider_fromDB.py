@@ -39,12 +39,14 @@ print("Log of fitness provider task for "+molName)
 
 # Pathnames to the sources of data
 uidToAtomClash=os.path.join(os.path.dirname(os.path.abspath(os.path.realpath(__file__))),"UIDsToAtomClash")
+uidToIncompleteRC=os.path.join(os.path.dirname(os.path.abspath(os.path.realpath(__file__))),"UIDsToIncompleteRingClosure")
 uidToFitness=os.path.join(os.path.dirname(os.path.abspath(os.path.realpath(__file__))),"UIDsToFitness")
 
 os.chdir(wrkDir)
 print("cwd: "+os.getcwd());
 print("Using map UiD-to-Fitness:     "+uidToFitness);
 print("Using map UiD-to-AtomClashes: "+uidToAtomClash);
+print("Using map UiD-to-IncompleteRingClosure: "+uidToIncompleteRC);
 
 if not os.path.isfile(inpSDF):
     print("Cannot find file '%s'" % filename)
@@ -83,12 +85,18 @@ if (not foundUid):
     exitWithError("#UID: not found",0)
 print("Found candidate's UID: "+uid)
 
-# Some candidate led to atom chalshes during molecularm odeling, so do not have a fitness
+# Some candidate led to atom clashes during molecular modeling, so do not have a fitness
 # Is this candidate one of them?
 with open(uidToAtomClash, "r") as atomClashingUIDs:
     for line in atomClashingUIDs:
         if re.search(uid, line):
             exitWithError("#AtomClash: Found Atom Clashes",0)
+
+# Other candidates did not manage to form ring closures
+with open(uidToIncompleteRC, "r") as incompleteRCUIDs:
+    for line in incompleteRCUIDs:
+        if re.search(uid, line):
+            exitWithError("#RingClosureTool: incomplete closure",0)
             
 # Recover the fitness of the candidate, if available.
 foundFitness=False
@@ -103,7 +111,7 @@ with open(uidToFitness, "r") as knownUIDs:
 
 # If no fitness is found this candidate is ignored.
 if (not foundFitness):
-    exitWithError("#FITNESS: not found",0)
+    exitWithError("#FITNESS: UID not found",0)
 
 print("All done. Returning "+outSDF)
 os.rename(preliminaryOutput, outSDF)
