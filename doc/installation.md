@@ -119,7 +119,7 @@ We now ask **conda** to create a dedicated environment for the workshow. The env
 2. If you have not, activate `conda` in Miniconda first using `conda activate` or `source ~/miniconda3/bin/activate`. If neither works, please first follow {ref}`setting-conda-path`. You probably need to restart your shell terminal. Then try `conda activate` or `source ~/miniconda3/bin/activate` again.
 3. Run the following command:
 ```
-conda env create -f  environment.yml
+conda env create -f  https://raw.githubusercontent.com/denoptim-project/workshop-May2022/main/environment.yml
 ```
 4. Make sure that you see "dnp_workshop" in the output when you ask for a list of all available environments:
 ```
