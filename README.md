@@ -1,8 +1,9 @@
-# Data Sets for Exercises
+# On-line Material for DENOPTIM Workshop
 
-This repository collects data sets for hands-on exercises with DENOPTIM.
+This repository collects data sets for hands-on exercises performed during a DENOPTIM orkshop.
 
-For installation instructions see [doc/installation.md](./doc/installation.md).
+## Installation
+For instructions to install DENOPTIM see [doc/installation.md](./doc/installation.md).
 
-DENOPTIM's user manual is available [on line](http://htmlpreview.github.io/?https://github.com/denoptim-project/DENOPTIM/blob/master/doc/user_manual.html).
-
+## Exercises
+* [Exercise 1.0](exercise_1.0/README.md): building transition metal complexes from fragments.
