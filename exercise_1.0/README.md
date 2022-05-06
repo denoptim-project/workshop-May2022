@@ -2,12 +2,8 @@
 
 In this exercise we familiarise with the use of molecular fragments, attachment points, and connection rules. The goal is to build a small space of building blocks, also known as a "fragment space", from scratch.
 
----
-**NOTE**
+> **NOTE** This exercise is best performed while having access to the Internet. DENOPTIM will, in fact, call for an online service that converts SMILES to 3D-structures. When off-line, it will offer the user with the choice to use a local functionality from [CDK](https://cdk.github.io/), which is OK but slower and less accurate.
 
-This exercise is best performed while having access to the Internet. DENOPTIM will, in fact, call for an online service that converts SMILES to 3D-structures. When off-line, it will offer the user with the choice to use a local functionality from [CDK](https://cdk.github.io/), which is OK but slower and less accurate.
-
----
 
 ## Create a Space of Building Blocks (Fragment Space)
 
@@ -36,20 +32,16 @@ This exercise is best performed while having access to the Internet. DENOPTIM wi
 15. Save the compatibility matrix as `my_compatibility_matrix.par` under the `exercise_1.0` folder.
 
 
----
-**NOTE**
 
-Right-click on the molecular viewer to get the vast functionality offered by [Jmol](http://jmol.sourceforge.net/), including, for instance, see the `Select` -> `Invert Selection`. In particular, in the right-click menu you can chose `Console` to open Jmol's command line interface and use the `select` command. Here are some common examples of use:
-- `select _N`: selects all nitrogen atoms.
-- `select atomno >= 10 and atomno <= 43`: selects atoms from number 10 to 43 in the list of atom. Note the use of a the logical operator `and`.
-- `select search("<SMARTS>")` where `<SMARTS>` is a [SMARTS substructure search query](https://www.daylight.com/dayhtml/doc/theory/theory.smarts.html). For example,
-	- `select search("[#7]-[#6]")`: selects all nitrogen and carbon atoms of any kind that are connected by a single bond.
+> **NOTE** Right-click on the molecular viewer to get the vast functionality offered by [Jmol](http://jmol.sourceforge.net/), including, for instance, see the `Select` -> `Invert Selection`. In particular, in the right-click menu you can chose `Console` to open Jmol's command line interface and use the `select` command. Here are some common examples of use:
+> - `select _N`: selects all nitrogen atoms.
+> - `select atomno >= 10 and atomno <= 43`: selects atoms from number 10 to 43 in the list of atom. Note the use of a the logical operator `and`.
+> - `select search("<SMARTS>")` where `<SMARTS>` is a [SMARTS substructure search query](https://www.daylight.com/dayhtml/doc/theory/theory.smarts.html). For example,
+>	- `select search("[#7]-[#6]")`: selects all nitrogen and carbon atoms of any kind that are connected by a single bond.
 	- `select search("[r5]")`: selects all atoms that are part of a five-member ring.
-- `select selected OR connected(selected)`: propagates selection to all atoms connected to currently selected atoms.
-- `select none`: clears the list of selected atoms.
-Refer to [Jmol's documentation](https://chemapps.stolaf.edu/jmol/docs/) for further details on the functionality provided by Jmol.
-
----
+> - `select selected OR connected(selected)`: propagates selection to all atoms connected to currently selected atoms.
+> - `select none`: clears the list of selected atoms.
+> Refer to [Jmol's documentation](https://chemapps.stolaf.edu/jmol/docs/) for further details on the functionality provided by Jmol.
 
 ## Explore the fragment space
 Here we will briefly use the fragment space to generate all the Pt complexes that are encoded in the space we have just generated.
