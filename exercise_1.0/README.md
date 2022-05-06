@@ -1,4 +1,4 @@
-# Exercise 1.0: building molecules from fragments
+# Exercise 1.0: Building Transition Metal Complexes from Fragments
 
 In this exercise we familiarise with the use of molecular fragments, attachment points, and connection rules. The goal is to build a small space of building blocks, also known as a "fragment space", from scratch.
 
