@@ -1,16 +1,15 @@
 # Parameters controlling the genetic algorithm
-GA-RandomSeed=12345
-#GA-InitPoplnFile=
-GA-populationSize=25
-GA-numChildren=10
+GA-InitPoplnFile=initPopulation.sdf
+GA-populationSize=20
+GA-numChildren=5
 GA-numParallelTasks=4
 GA-numGenerations=100
 GA-numConvGen=10
 GA-replacementStrategy=elitist
 GA-XOverSelectionMode=TS
-GA-crossoverWeight=0.5
-GA-mutationWeight=0.2
-GA-ConstructionWeight=0.2
+GA-crossoverWeight=0
+GA-mutationWeight=0
+GA-ConstructionWeight=1
 GA-symmetryProbability=0.0
 GA-LevelGrowthProbScheme=sigma
 GA-LevelGrowthSigmaSteepness=3.0
