@@ -1,12 +1,12 @@
-# Exercise 2.0: Evolutionary Design of *trans*-Pt(X<sup>1</sup>)(X<sup>2</sup>)(L)(CO)
+# Exercise 2.0: Evolutionary Design of *trans*-Pt(X)(X')(L)(CO)
 
 ## Introduction
-In this exercise we play with the genetic algorithm while designing Pt compounds. To allow a chemical interpretation of the results, we define a chemical design goal: identify a set of ligands [X<sup>1</sup>, X<sup>2</sup>, L], where each X<sup>i</sup> is a covalent ligand and L is a neutral donor (dative) ligand, that weaken the C&equiv;O bond of the carbonyl ligand in the square planar complex *trans*-Pt(X<sup>1</sup>)(X<sup>2</sup>)(L)(CO).
+In this exercise we play with the genetic algorithm while designing Pt compounds. To allow a chemical interpretation of the results, we define a chemical design goal: identify a set of ligands [X, X', L], where each X is a covalent ligand and L is a neutral donor (dative) ligand, that weaken the C&equiv;O bond of the carbonyl ligand in the square planar complex *trans*-Pt(X)(X')(L)(CO).
 
-The variable strength of the CO bond results from the electronic properties of the metal fragment *trans*-Pt(X<sup>1</sup>)(X<sup>2</sup>)(L). The bonding between the metal and CO involves electron donation from the carbonyl carbon atom to the metal, and back-donation from an occupied *d*-orbital of the metal center to the CO &pi;-antibonding orbital. The accompanying weakening of the CO bond is reflected in bond elongation and red-shift of the corresponding stretching frequency. This effect is the basis for the [Tolman electronic parameter](https://en.wikipedia.org/wiki/Tolman_electronic_parameter), which is often used to classify ligands according to their electronic properties.
+The variable strength of the CO bond results from the electronic properties of the metal fragment *trans*-Pt(X)(X')(L). The bonding between the metal and CO involves electron donation from the carbonyl carbon atom to the metal, and back-donation from an occupied *d*-orbital of the metal center to the CO &pi;-antibonding orbital. The accompanying weakening of the CO bond is reflected in bond elongation and red-shift of the corresponding stretching frequency. This effect is the basis for the [Tolman electronic parameter](https://en.wikipedia.org/wiki/Tolman_electronic_parameter), which is often used to classify ligands according to their electronic properties.
 
 ### Fitness
-The fitness associated to each set [X<sup>1</sup>, X<sup>2</sup>, L] is defined by the length of the C&equiv;O bond of the carbonyl ligand in the square planar complex *trans*-Pt(X<sup>1</sup>)(X<sup>2</sup>)(L)(CO) as provided by the following molecular modelling protocol:
+The fitness associated to each set [X, X', L] is defined by the length of the C&equiv;O bond of the carbonyl ligand in the square planar complex *trans*-Pt(X)(X')(L)(CO) as provided by the following molecular modelling protocol:
 1. assembling of 3D building blocks to generate an initial molecular model.
 2. light-weight conformational search performed by [Tinker](https://tinkertools.org/) in the torsional space (bond lengths and angles are not changed).
 3. geometry optimisation by semi-empirical method PM6 as implemented in [Spartan](https://www.wavefun.com/spartan).
@@ -40,7 +40,7 @@ denoptim input_parameters
 	> **Question 2:** Which APClasses can be used on the attachment point for the L-type ligand? And for the X-type ligand?
 
 	- Click on `File`->`Open` and inspect the `lib_fragments.sdf` file. Look for the fragments that offer attachment points belonging to the APClasses you have identified in the previous step.
-	> **Question 3:** Use your chemical experience and intuition to guess what set of ligands [X<sup>1</sup>, X<sup>2</sup>, L] can produce a high fitness. Discuss the likeliness of randomly picking such a set.
+	> **Question 3:** Use your chemical experience and intuition to guess what set of ligands [X, X', L] can produce a high fitness. Discuss the likeliness of randomly picking such a set.
 
 3. Go back to the input parameters by clicking on `Active Tabs` -> `Prepare GA experiment` and start the evolutionary design by clicking on `Run now...` and follow the dialog: Once the experiment is submitted, you will be notified on where the output is being written.
 > **Note**: As seen in exercise 1.0, the bar in the top-right part of DENOPTIM's window turns grey to indicate the experiment is running. When it turns blue again, the experiment is complete.
