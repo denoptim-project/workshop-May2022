@@ -34,24 +34,24 @@ denoptim input_parameters
 	- The `Fitness Provider` tab configures the call to the external python script that "calculates" the fitness.
 	- In the `Space of Building Blocks` tab, you find the names of the files collecting the building blocks and the APClass compatibility rules.
 	- Do `File`->`Open` to inspect the scaffold fragment at `lib_scaffolds.sdf` file.
-	> **Question 1:** Which one is the attachment point representing the coordination site for the dative (L-type) ligand? What is the *attachment point class* (APClass)?
+		> **Question 1:** Which one is the attachment point representing the coordination site for the dative (L-type) ligand? What is the *attachment point class* (APClass)?
 
 	- Click on `File`->`Open` and inspect the `compatibility_matrix.par` file.
-	> **Question 2:** Which APClasses can be used on the attachment point for the L-type ligand? And for the X-type ligand?
+		> **Question 2:** Which APClasses can be used on the attachment point for the L-type ligand? And for the X-type ligand?
 
 	- Click on `File`->`Open` and inspect the `lib_fragments.sdf` file. Look for the fragments that offer attachment points belonging to the APClasses you have identified in the previous step.
-	> **Question 3:** Use your chemical experience and intuition to guess what set of ligands [X, X', L] can produce a high fitness. Discuss the likeliness of randomly picking such a set.
+		> **Question 3:** Use your chemical experience and intuition to guess what set of ligands [X, X', L] can produce a high fitness. Discuss the likeliness of randomly picking such a set.
 
 3. Go back to the input parameters by clicking on `Active Tabs` -> `Prepare GA experiment` and start the evolutionary design by clicking on `Run now...` and follow the dialog: Once the experiment is submitted, you will be notified on where the output is being written.
-> **Note**: As seen in exercise 1.0, the bar in the top-right part of DENOPTIM's window turns grey to indicate the experiment is running. When it turns blue again, the experiment is complete.
+	> **Note**: As seen in exercise 1.0, the bar in the top-right part of DENOPTIM's window turns grey to indicate the experiment is running. When it turns blue again, the experiment is complete.
 
 4. When the experiment has been completed, open the output from `File`->`Open Recent...` and select the appropriate path. This opens a "GARun inspector" tab where you find:
 
  	- The evolution plot (top-right panel): each point is a a candidate, click on it to display the structure and properties of the candidate. By default, the plot show two blue lines: the *minimum* and the *maximum* value of the fitness in the population. The button `Show/Hide Population Stats` allows to add also the mean and median.
 
-  - The monitor plot (bottom-right panel): collects numerical indicators of the algorithm behaviour, such as the number of attempts to create candidates, which is the series shown by default. The button `Show/Hide Population Stats` allows to add/remove series to the plot.
+  	- The monitor plot (bottom-right panel): collects numerical indicators of the algorithm behaviour, such as the number of attempts to create candidates, which is the series shown by default. The button `Show/Hide Population Stats` allows to add/remove series to the plot.
 
- > **Question 4**: With the exclusion of generation 0 (i.e., the initial population given as input), how does are the candidate's fitness values distributed over the fitness axis during the course of the experiment? Explain this distribution. (Hint: remember what we noted when inspecting the input parameters in point 2)
+	> **Question 4**: With the exclusion of generation 0 (i.e., the initial population given as input), how does are the candidate's fitness values distributed over the fitness axis during the course of the experiment? Explain this distribution. (Hint: remember what we noted when inspecting the input parameters in point 2)
 
 5. Run two more independent experiments starting from the same input parameters. By default, each experiment uses an independent sequence of pseudo-random events. Therefore, to get independent repeats you can switch back to the input parameters by clicking on `Active Tabs` -> `Prepare GA experiment`, and submit again with `Run now...`. You can submit more than one experiment in parallel.
 
@@ -63,18 +63,18 @@ denoptim input_parameters
 
 8. Inspect the results of these "crossover-only" experiments.
 
- > **Question 5**: Explain what you observe in the evolution and monitor plots? (Hint: plot the *Duplicate Pre-Fitness* series)
+	> **Question 5**: Explain what you observe in the evolution and monitor plots? (Hint: plot the *Duplicate Pre-Fitness* series)
 
 9. Now, we produce "mutation-only" experiments. Again, via `Active Tabs` -> `Prepare GA experiment` go back to the input parameters and set the following in the `Genetic Algorithm` tab:
 	- *Crossover weight* = 0
 	- *Mutation weight* = 1
 	- *Construction weight* = 0
 
- As before, run three such experiments.
+	As before, run three such experiments.
 
 10. Inspect the results of these "mutation-only" experiments.
 
- > **Question 6**: Compare mutation and crossover in terms of capability to introduce new structural features in the population.
+ 	> **Question 6**: Compare mutation and crossover in terms of capability to introduce new structural features in the population.
 
 11. Finally, we combine crossover, mutation and random construction (we'll call these the "complete GA" experiments). Again, via `Active Tabs` -> `Prepare GA experiment` go back to the input parameters and set the following in the `Genetic Algorithm` tab:
 	- *Crossover weight* = 1
