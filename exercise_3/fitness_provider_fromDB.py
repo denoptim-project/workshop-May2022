@@ -120,31 +120,33 @@ if (not foundFitness):
 
 pathNameTo3D=os.path.join(os.path.join(os.path.dirname(os.path.abspath(os.path.realpath(__file__))), "pre-computed_geometries"), nameInArchive + ".sdf")
 print("Trying to take 3D from ",pathNameTo3D)
+if not os.path.isfile(pathNameTo3D):
+    print("File with 3D model not found: ",pathNameTo3D)
+else:
+    # Recover the 3D model from the archive
+    preOutB = open(preliminaryOutputB,'w')
+    preOutB.write(molName + os.linesep)
+    with open(pathNameTo3D, "r") as precomputed3Dfile:
+        next(precomputed3Dfile) #skip the prev mol name
+        for line in precomputed3Dfile:
+            if 'M  END' in line:
+                break
+            preOutB.write(line)
 
-# Recover the 3D model from the archive
-preOutB = open(preliminaryOutputB,'w')
-preOutB.write(molName + os.linesep)
-with open(pathNameTo3D, "r") as precomputed3Dfile:
-    next(precomputed3Dfile) #skip the prev mol name
-    for line in precomputed3Dfile:
-        if 'M  END' in line:
-            break
-        preOutB.write(line)
-
-# Append all the rest of the data (i.e, graph, fitness, uid, etc.)
-preOut = open(preliminaryOutput,'r')
-keepLine=False
-for line in preOut:
-    if "M  END" in line:
-        keepLine=True
-    if keepLine:
-        preOutB.write(line)
-preOut.close()
-preOutB.close()
+    # Append all the rest of the data (i.e, graph, fitness, uid, etc.)
+    preOut = open(preliminaryOutput,'r')
+    keepLine=False
+    for line in preOut:
+        if "M  END" in line:
+            keepLine=True
+        if keepLine:
+            preOutB.write(line)
+    preOut.close()
+    preOutB.close()
+    os.rename(preliminaryOutputB, preliminaryOutput)
 
 
 print("All done. Returning "+outSDF)
-os.remove(preliminaryOutput)
-os.rename(preliminaryOutputB, outSDF)
+os.rename(preliminaryOutput, outSDF)
 sys.stdout.close()
 sys.exit(0)
