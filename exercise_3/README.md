@@ -7,7 +7,7 @@ Like in the [previous exercise](../exercise_2.0/README.md) we set as chemical go
 
 To define such constrain, while allowing DENOPTIM to change the components forming the ring, we make use of **Template** vertexes. Templates are special vertexes that can embed graph and can define constraints on such embedded graphs. Also, while the embedded graph may be editable, the Template appears as a single vertex, when seen from the outside.
 
-![template.pdf](template.pdf)
+![template_concept.png](template_concept.png)
 
 The design of rings poses an additional challenge: the closability of a chain cannot be given for granted unless the chain elements are constrained to include only known rings. Even then, substituents on the chain may prevent the actual formation of the ring by adding steric hindrance, or by adding additional constraints (e.g., fused rings). Since in de novo design we typically want to explore unknown structural features, we want i) to avoid assumptions on the closability and ii) to assess closability on the fly. In this example, we use hybrid approach in that only rings with a certain size (i.e., atom count) are allowed to form, but their closability is evaluated only in the molecular modeling workflow by a dedicated ring-closing conformational search (further details at [*J. Chem. Inf. Model.* **2015**, 55, 9, 1844–1856](https://doi.org/10.1021/acs.jcim.5b00424)).
 
@@ -31,3 +31,4 @@ run
 
 
 ## Discussion
+-
