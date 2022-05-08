@@ -33,6 +33,7 @@ UIDFILE=sys.argv[5]
 molName=os.path.basename(inpSDF).replace("_inp.sdf","")
 log=os.path.join(os.path.dirname(inpSDF), molName + "_FProvider.log")
 preliminaryOutput=os.path.join(os.path.dirname(inpSDF), molName + "_preOut.sdf")
+preliminaryOutputB=os.path.join(os.path.dirname(inpSDF), molName + "_preOutB.sdf")
 
 sys.stdout = open(log, 'w')
 print("Log of fitness provider task for "+molName)
@@ -49,7 +50,7 @@ print("Using map UiD-to-AtomClashes: "+uidToAtomClash);
 print("Using map UiD-to-IncompleteRingClosure: "+uidToIncompleteRC);
 
 if not os.path.isfile(inpSDF):
-    print("Cannot find file '%s'" % filename)
+    print("Cannot find file '%s'" % inpSDF)
     sys.stdout.close()
     sys.exit(1)
 
@@ -85,19 +86,22 @@ if (not foundUid):
     exitWithError("#UID: not found",0)
 print("Found candidate's UID: "+uid)
 
+nameInArchive=""
 # Some candidate led to atom clashes during molecular modeling, so do not have a fitness
 # Is this candidate one of them?
 with open(uidToAtomClash, "r") as atomClashingUIDs:
     for line in atomClashingUIDs:
         if re.search(uid, line):
+            nameInArchive = line.strip().split()[1] + "_AtomClash"
             exitWithError("#AtomClash: Found Atom Clashes",0)
 
 # Other candidates did not manage to form ring closures
 with open(uidToIncompleteRC, "r") as incompleteRCUIDs:
     for line in incompleteRCUIDs:
         if re.search(uid, line):
+            nameInArchive = line.strip().split()[1] + "_incompleteRingclosure"
             exitWithError("#RingClosureTool: incomplete closure",0)
-            
+
 # Recover the fitness of the candidate, if available.
 foundFitness=False
 with open(uidToFitness, "r") as knownUIDs:
@@ -105,15 +109,42 @@ with open(uidToFitness, "r") as knownUIDs:
         if re.search(uid, line):
             print("Found fitness value: "+line.strip())
             fitness=line.strip().split()[1]
+            nameInArchive = line.strip().split()[2] + "_out"
             foundFitness=True
             copySDFandAddProperty(inpSDF,preliminaryOutput,"FITNESS",fitness)
             break
 
 # If no fitness is found this candidate is ignored.
 if (not foundFitness):
-    exitWithError("#FITNESS: UID not found",0)
+    exitWithError("#FitValue: UID not found among pre-computed data",0)
+
+pathNameTo3D=os.path.join(os.path.join(os.path.dirname(os.path.abspath(os.path.realpath(__file__))), "pre-computed_geometries"), nameInArchive + ".sdf")
+print("Trying to take 3D from ",pathNameTo3D)
+
+# Recover the 3D model from the archive
+preOutB = open(preliminaryOutputB,'w')
+preOutB.write(molName + os.linesep)
+with open(pathNameTo3D, "r") as precomputed3Dfile:
+    next(precomputed3Dfile) #skip the prev mol name
+    for line in precomputed3Dfile:
+        if 'M  END' in line:
+            break
+        preOutB.write(line)
+
+# Append all the rest of the data (i.e, graph, fitness, uid, etc.)
+preOut = open(preliminaryOutput,'r')
+keepLine=False
+for line in preOut:
+    if "M  END" in line:
+        keepLine=True
+    if keepLine:
+        preOutB.write(line)
+preOut.close()
+preOutB.close()
+
 
 print("All done. Returning "+outSDF)
-os.rename(preliminaryOutput, outSDF)
+os.remove(preliminaryOutput)
+os.rename(preliminaryOutputB, outSDF)
 sys.stdout.close()
 sys.exit(0)

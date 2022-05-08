@@ -1,5 +1,4 @@
 # Genetic Algorithm - parameters
-GA-RandomSeed=12345
 GA-PrecisionLevel=5
 GA-Verbosity=0
 GA-PopulationSize=20
@@ -10,14 +9,14 @@ GA-LevelGrowthProbScheme=EXP_DIFF
 GA-LevelGrowthMultiplier=1.0
 GA-CrowdProbScheme=UNRESTRICTED
 GA-XOverSelectionMode=TS
-GA-CrossoverWeight=1
-GA-MutationWeight=1
-GA-ConstructionWeight=1
+GA-CrossoverWeight=1.0
+GA-MutationWeight=1.0
+GA-ConstructionWeight=1.0
 GA-ReplacementStrategy=ELITIST
 GA-NumParallelTasks=4
 GA-Parallelization=Synchronous
 # Building Blocks Space - parameters
-FS-ScaffoldLibFile=lib_scaffolds_w_chelation_template.sdf
+FS-ScaffoldLibFile=lib_scaffolds.sdf
 FS-FragmentLibFile=lib_fragments.sdf
 FS-CappingFragmentLibFile=lib_capping-groups.sdf
 FS-CompMatrixFile=compatibility_matrix.par

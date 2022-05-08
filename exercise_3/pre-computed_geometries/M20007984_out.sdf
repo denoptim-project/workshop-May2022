@@ -1,0 +1,1718 @@
+M20007984
+  CDK     05042207023D
+
+ 48 51  0  0  0  0  0  0  0  0999 V2000
+   -0.0098    0.0049    0.6289 Pt  0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0006    0.0016    2.5609 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0025   -0.0041    3.6974 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0070    1.0013    0.6372 Du  0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0014    0.9902    2.5698 Du  0  0  0  0  0  0  0  0  0  0  0  0
+    0.4856    1.5762   -2.3982 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6112    1.3734   -3.1033 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.4357    2.4542   -3.7461 C   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0133    2.9492   -2.9653 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7655    3.1882   -4.1772 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.3705    1.9349   -4.8192 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8010    1.6347   -5.6953 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.0632    2.7363   -5.1176 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.1588    0.7520   -4.3091 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.6877    1.0256   -3.4029 H   0  0  0  0  0  0  0  0  0  0  0  0
+    4.9029    0.4695   -5.0619 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.2435   -0.4254   -4.0562 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8721   -0.8088   -4.9969 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.7862   -1.2138   -3.5637 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0356   -0.0509   -3.1867 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3039   -0.9192   -2.4789 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0095    0.0046   -1.6587 P   0  0  0  0  0  4  0  0  0  0  0  0
+   -1.4047   -0.5235   -2.3233 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7029    0.1360   -3.1327 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1937   -0.5591   -1.5739 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2538   -1.5462   -2.7123 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1783   -0.0001    0.8156 O   0  0  0  0  0  0  0  0  0  0  0  0
+    3.8375    0.0869    2.5358 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5789    0.2096    2.1936 C   0  0  0  0  0  0  0  0  0  0  0  0
+    4.1359    0.2431    3.5620 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1598    0.6852    2.5592 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5463    0.5692    3.2329 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1075   -0.2742    2.0933 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5825    0.9427    3.3230 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1979    1.4735    1.7976 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8044    1.5294    3.7031 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4879   -0.2198    4.0065 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1874   -0.0078    0.8053 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7691    0.3408    3.1341 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.5918   -0.0613    2.1971 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0702    0.3010    4.1705 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.9841   -0.1256    1.5011 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.9595   -0.5797    2.5659 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.6953   -0.5207    0.5165 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.9724   -0.5105    1.7765 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -5.0071    0.9706    1.4726 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -4.2580   -0.1876    3.5492 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.9578   -1.6860    2.5917 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  3  3  0  0  0  0
+  1  2  1  0  0  0  0
+  4  1  1  0  0  0  0
+  5  2  1  0  0  0  0
+  6  7  2  0  0  0  0
+  7  8  1  0  0  0  0
+  8  9  1  0  0  0  0
+ 10  8  1  0  0  0  0
+ 11  8  1  0  0  0  0
+ 12 11  1  0  0  0  0
+ 13 11  1  0  0  0  0
+ 14 11  1  0  0  0  0
+ 15 14  1  0  0  0  0
+ 16 14  1  0  0  0  0
+ 17 14  1  0  0  0  0
+ 17 20  1  0  0  0  0
+ 18 17  1  0  0  0  0
+ 19 17  1  0  0  0  0
+ 20  7  1  0  0  0  0
+ 21 20  2  0  0  0  0
+ 21 22  1  0  0  0  0
+ 22  6  1  0  0  0  0
+  1 22  1  0  0  0  0
+ 24 23  1  0  0  0  0
+ 25 23  1  0  0  0  0
+ 26 23  1  0  0  0  0
+ 22 23  1  0  0  0  0
+  1 27  1  0  0  0  0
+ 28 29  2  0  0  0  0
+ 28 30  1  0  0  0  0
+ 27 29  1  0  0  0  0
+ 31 32  1  0  0  0  0
+ 31 33  1  0  0  0  0
+ 31 34  1  0  0  0  0
+ 31 35  1  0  0  0  0
+ 32 36  1  0  0  0  0
+ 32 37  1  0  0  0  0
+ 29 32  1  0  0  0  0
+  1 38  1  0  0  0  0
+ 39 40  2  0  0  0  0
+ 39 41  1  0  0  0  0
+ 38 40  1  0  0  0  0
+ 42 43  1  0  0  0  0
+ 42 44  1  0  0  0  0
+ 42 45  1  0  0  0  0
+ 42 46  1  0  0  0  0
+ 43 47  1  0  0  0  0
+ 43 48  1  0  0  0  0
+ 40 43  1  0  0  0  0
+  6 39  1  0  0  0  0
+ 21 28  1  0  0  0  0
+M  END
+> <ATTACHMENT_POINTS>
+
+
+> <GCODE>
+19480
+
+> <GraphENC>
+19480 1006520_1_0,1006521_46_1,1006522_79_1,1006523_79_1,1006524_2_2,1006525_73_1,1006526_73_1,1006527_72_1,1006528_72_1,1006529_80_1,1006530_80_1,1006531_25_1,1006532_25_1, 1006520_2_1006521_3_SINGLE_scaff:0_MPhosphole:1,1006521_0_1006522_0_SINGLE_LPhospholeSubAlpha:0_ATplus:0,1006521_1_1006523_0_SINGLE_LPhospholeSubAlpha:0_ATplus:0,1006521_2_1006524_0_SINGLE_LPhospholeSubR:0_me:1,1006520_1_1006525_0_SINGLE_Xlig:0_Xlig:1,1006520_0_1006526_0_SINGLE_Xlig:0_Xlig:1,1006525_1_1006527_1_SINGLE_bridge:1_bridge:0,1006526_1_1006528_1_SINGLE_bridge:1_bridge:0,1006528_0_1006529_0_SINGLE_bridge:0_ATminus:0,1006527_0_1006530_0_SINGLE_bridge:0_ATminus:0,1006527_2_1006531_0_SINGLE_SubBridge:0_SubRS:1,1006528_2_1006532_0_SINGLE_SubBridge:0_SubRS:1, DENOPTIMRing [vertices=[1006522_79_1, 1006521_46_1, 1006520_1_0, 1006526_73_1, 1006528_72_1, 1006529_80_1]] DENOPTIMRing [vertices=[1006523_79_1, 1006521_46_1, 1006520_1_0, 1006525_73_1, 1006527_72_1, 1006530_80_1]] SymmetricSet [symIds=[1006522, 1006523]] SymmetricSet [symIds=[1006525, 1006526]] SymmetricSet [symIds=[1006527, 1006528]] SymmetricSet [symIds=[1006529, 1006530]] SymmetricSet [symIds=[1006531, 1006532]] 
+
+> <GraphJson>
+{
+  "graphId": 19480,
+  "gVertices": [
+    {
+      "lstAPs": [
+        {
+          "id": 1664768,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "Xlig",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": -2.3339,
+            "y": -0.0087,
+            "z": 0.8172
+          }
+        },
+        {
+          "id": 1664769,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "Xlig",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": 2.336,
+            "y": -5.0E-4,
+            "z": 0.829
+          }
+        },
+        {
+          "id": 1664770,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "scaff",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": -0.0095,
+            "y": 0.0046,
+            "z": -1.7113
+          }
+        }
+      ],
+      "lstSymAPs": [
+        {
+          "symIds": [
+            0,
+            1
+          ]
+        }
+      ],
+      "mol": {
+        "atoms": [
+          {
+            "elSymbol": "Pt",
+            "p3d": {
+              "x": -0.0098,
+              "y": 0.0049,
+              "z": 0.6289
+            }
+          },
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": -6.0E-4,
+              "y": 0.0016,
+              "z": 2.5609
+            }
+          },
+          {
+            "elSymbol": "O",
+            "p3d": {
+              "x": 0.0025,
+              "y": -0.0041,
+              "z": 3.6974
+            }
+          },
+          {
+            "elSymbol": "Du",
+            "p3d": {
+              "x": -0.007,
+              "y": 1.0013,
+              "z": 0.6372
+            }
+          },
+          {
+            "elSymbol": "Du",
+            "p3d": {
+              "x": -0.0014,
+              "y": 0.9902,
+              "z": 2.5698
+            }
+          }
+        ],
+        "bonds": [
+          {
+            "atomIds": [
+              1,
+              2
+            ],
+            "bo": "TRIPLE"
+          },
+          {
+            "atomIds": [
+              0,
+              1
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              3,
+              0
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              4,
+              1
+            ],
+            "bo": "SINGLE"
+          }
+        ]
+      },
+      "vertexId": 1006520,
+      "buildingBlockId": 0,
+      "buildingBlockType": "SCAFFOLD",
+      "isRCV": false,
+      "properties": {
+        "ATTACHMENT_POINTS": "1#Xlig:0:SINGLE:-2.3339%-0.0087%0.8172,Xlig:0:SINGLE:2.3360%-0.0005%0.8290,scaff:0:SINGLE:-0.0095%0.0046%-1.7113 ",
+        "OLDVERTEXID": 185
+      },
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "MolecularFragment"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 1664771,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "LPhospholeSubAlpha",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": -0.2290937897654505,
+            "y": 2.845703088769645,
+            "z": -2.160777178013941
+          }
+        },
+        {
+          "id": 1664772,
+          "atomPositionNumber": 15,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "LPhospholeSubAlpha",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": 1.433131987709915,
+            "y": -2.382198919642542,
+            "z": -2.3644685748284955
+          }
+        },
+        {
+          "id": 1664773,
+          "atomPositionNumber": 16,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "LPhospholeSubR",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": -1.5463847239590087,
+            "y": -0.5771547632366629,
+            "z": -2.390802741050389
+          }
+        },
+        {
+          "id": 1664774,
+          "atomPositionNumber": 16,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "MPhosphole",
+            "subClass": 1,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": -0.009793254624231097,
+            "y": 0.00489325462423156,
+            "z": 0.5762815720879806
+          }
+        }
+      ],
+      "lstSymAPs": [
+        {
+          "symIds": [
+            0,
+            1
+          ]
+        }
+      ],
+      "mol": {
+        "atoms": [
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": 0.4856274899334586,
+              "y": 1.5762109946729261,
+              "z": -2.3981624458202697
+            }
+          },
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": 1.611236365338333,
+              "y": 1.373370494187636,
+              "z": -3.1032865419711895
+            }
+          },
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": 2.4357447337692792,
+              "y": 2.454179591262286,
+              "z": -3.7461023290113147
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 3.013329858302042,
+              "y": 2.9492383411059415,
+              "z": -2.965319966171508
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 1.7655347227917784,
+              "y": 3.1882174911944157,
+              "z": -4.177199710873893
+            }
+          },
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": 3.3704725078088114,
+              "y": 1.9349274128578793,
+              "z": -4.81920613277933
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 2.8010380192699245,
+              "y": 1.634671134744067,
+              "z": -5.695306983546921
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 4.063166027586396,
+              "y": 2.7363018238259396,
+              "z": -5.1175729223249
+            }
+          },
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": 4.158814796123447,
+              "y": 0.7520137905885036,
+              "z": -4.309093303393133
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 4.68771796173765,
+              "y": 1.0256455622701075,
+              "z": -3.4028599532400605
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 4.902904515496089,
+              "y": 0.4695459391300859,
+              "z": -5.061936143842859
+            }
+          },
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": 3.2435442631862434,
+              "y": -0.4253802058638042,
+              "z": -4.056152107351634
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 2.8721188104648205,
+              "y": -0.8087562236056864,
+              "z": -4.996874012109391
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 3.7861506052430647,
+              "y": -1.2138094024882655,
+              "z": -3.5637274842164546
+            }
+          },
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": 2.0355845146824265,
+              "y": -0.050886930720320245,
+              "z": -3.1866848377739334
+            }
+          },
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": 1.303944062398438,
+              "y": -0.9192241744201626,
+              "z": -2.4789488560791755
+            }
+          },
+          {
+            "elSymbol": "P",
+            "p3d": {
+              "x": -0.009506745375768903,
+              "y": 0.0046067453757684396,
+              "z": -1.658681572087981
+            }
+          }
+        ],
+        "bonds": [
+          {
+            "atomIds": [
+              0,
+              1
+            ],
+            "bo": "DOUBLE"
+          },
+          {
+            "atomIds": [
+              1,
+              2
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              2,
+              3
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              4,
+              2
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              5,
+              2
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              6,
+              5
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              7,
+              5
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              8,
+              5
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              9,
+              8
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              10,
+              8
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              11,
+              8
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              11,
+              14
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              12,
+              11
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              13,
+              11
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              14,
+              1
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              15,
+              14
+            ],
+            "bo": "DOUBLE"
+          },
+          {
+            "atomIds": [
+              15,
+              16
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              16,
+              0
+            ],
+            "bo": "SINGLE"
+          }
+        ]
+      },
+      "vertexId": 1006521,
+      "buildingBlockId": 45,
+      "buildingBlockType": "FRAGMENT",
+      "isRCV": false,
+      "properties": {
+        "ATTACHMENT_POINTS": "1#LPhospholeSubAlpha:0:SINGLE:-0.2291%2.8457%-2.1608 16#LPhospholeSubAlpha:0:SINGLE:1.4331%-2.3822%-2.3645 17#LPhospholeSubR:0:SINGLE:-1.5464%-0.5772%-2.3908,MPhosphole:1:SINGLE:-0.0098%0.0049%0.5763 ",
+        "OLDVERTEXID": 186
+      },
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "MolecularFragment"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 1664775,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "ATplus",
+            "subClass": 0,
+            "bndTyp": "ANY"
+          },
+          "dirVec": {
+            "x": -0.22909378976545047,
+            "y": 2.845703088769645,
+            "z": -2.160777178013941
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "mol": {
+        "atoms": [
+          {
+            "elSymbol": "ATP",
+            "p3d": {
+              "x": -0.23925828749796996,
+              "y": 2.863757328762798,
+              "z": -2.1574011738499577
+            }
+          }
+        ],
+        "bonds": []
+      },
+      "vertexId": 1006522,
+      "buildingBlockId": 78,
+      "buildingBlockType": "FRAGMENT",
+      "isRCV": true,
+      "properties": {
+        "ATTACHMENT_POINTS": "1#ATplus:0:ANY:-0.2291%2.8457%-2.1608 ",
+        "OLDVERTEXID": 187
+      },
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "MolecularFragment"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 1664776,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "ATplus",
+            "subClass": 0,
+            "bndTyp": "ANY"
+          },
+          "dirVec": {
+            "x": 1.433131987709915,
+            "y": -2.382198919642542,
+            "z": -2.3644685748284955
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "mol": {
+        "atoms": [
+          {
+            "elSymbol": "ATP",
+            "p3d": {
+              "x": 1.4349729282333077,
+              "y": -2.4030464523100608,
+              "z": -2.3628372196660403
+            }
+          }
+        ],
+        "bonds": []
+      },
+      "vertexId": 1006523,
+      "buildingBlockId": 78,
+      "buildingBlockType": "FRAGMENT",
+      "isRCV": true,
+      "properties": {
+        "ATTACHMENT_POINTS": "1#ATplus:0:ANY:1.4331%-2.3822%-2.3645 ",
+        "OLDVERTEXID": 188
+      },
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "MolecularFragment"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 1664777,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "me",
+            "subClass": 1,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": 6.4052,
+            "y": 0.4666,
+            "z": 7.6784
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "mol": {
+        "atoms": [
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": 5.1845,
+              "y": -0.3158,
+              "z": 7.9034
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 4.4018,
+              "y": 0.0156,
+              "z": 7.2277
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 4.8466,
+              "y": -0.2064,
+              "z": 8.9326
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 5.4032,
+              "y": -1.3837,
+              "z": 7.7252
+            }
+          }
+        ],
+        "bonds": [
+          {
+            "atomIds": [
+              1,
+              0
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              2,
+              0
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              3,
+              0
+            ],
+            "bo": "SINGLE"
+          }
+        ]
+      },
+      "vertexId": 1006524,
+      "buildingBlockId": 1,
+      "buildingBlockType": "CAP",
+      "isRCV": false,
+      "properties": {
+        "ATTACHMENT_POINTS": "1#me:1:SINGLE:6.4052%0.4666%7.6784 ",
+        "OLDVERTEXID": 354
+      },
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "MolecularFragment"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 1664778,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "Xlig",
+            "subClass": 1,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": -0.1753,
+            "y": 0.0948,
+            "z": -0.4464
+          }
+        },
+        {
+          "id": 1664779,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "bridge",
+            "subClass": 1,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": -0.5345,
+            "y": 2.7646,
+            "z": 0.48009999999999997
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "mol": {
+        "atoms": [
+          {
+            "elSymbol": "O",
+            "p3d": {
+              "x": -0.3534,
+              "y": 2.1044,
+              "z": -0.7339
+            }
+          }
+        ],
+        "bonds": []
+      },
+      "vertexId": 1006525,
+      "buildingBlockId": 72,
+      "buildingBlockType": "FRAGMENT",
+      "isRCV": false,
+      "properties": {
+        "ATTACHMENT_POINTS": "1#Xlig:1:SINGLE:-0.1753%0.0948%-0.4464,bridge:1:SINGLE:-0.5345%2.7646%0.4801 ",
+        "OLDVERTEXID": 355
+      },
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "MolecularFragment"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 1664780,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "Xlig",
+            "subClass": 1,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": -0.1753,
+            "y": 0.0948,
+            "z": -0.4464
+          }
+        },
+        {
+          "id": 1664781,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "bridge",
+            "subClass": 1,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": -0.5345,
+            "y": 2.7646,
+            "z": 0.48009999999999997
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "mol": {
+        "atoms": [
+          {
+            "elSymbol": "O",
+            "p3d": {
+              "x": -0.3534,
+              "y": 2.1044,
+              "z": -0.7339
+            }
+          }
+        ],
+        "bonds": []
+      },
+      "vertexId": 1006526,
+      "buildingBlockId": 72,
+      "buildingBlockType": "FRAGMENT",
+      "isRCV": false,
+      "properties": {
+        "ATTACHMENT_POINTS": "1#Xlig:1:SINGLE:-0.1753%0.0948%-0.4464,bridge:1:SINGLE:-0.5345%2.7646%0.4801 ",
+        "OLDVERTEXID": 346
+      },
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "MolecularFragment"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 1664782,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "bridge",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": 1.9789000000000003,
+            "y": 0.17000000000000004,
+            "z": 0.0
+          }
+        },
+        {
+          "id": 1664783,
+          "atomPositionNumber": 1,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "bridge",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": -0.3006,
+            "y": -1.4852,
+            "z": 0.0
+          }
+        },
+        {
+          "id": 1664784,
+          "atomPositionNumber": 1,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "SubBridge",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": -1.8343,
+            "y": 0.6268,
+            "z": 0.0
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "mol": {
+        "atoms": [
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": 0.6023,
+              "y": 0.7833,
+              "z": 0.0
+            }
+          },
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": -0.4578,
+              "y": 0.0135,
+              "z": 0.0
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 0.4897,
+              "y": 1.8574,
+              "z": 0.0
+            }
+          }
+        ],
+        "bonds": [
+          {
+            "atomIds": [
+              0,
+              1
+            ],
+            "bo": "DOUBLE"
+          },
+          {
+            "atomIds": [
+              0,
+              2
+            ],
+            "bo": "SINGLE"
+          }
+        ]
+      },
+      "vertexId": 1006527,
+      "buildingBlockId": 71,
+      "buildingBlockType": "FRAGMENT",
+      "isRCV": false,
+      "properties": {
+        "ATTACHMENT_POINTS": "1#bridge:0:SINGLE:1.9789%0.1700%0.0000 2#bridge:0:SINGLE:-0.3006%-1.4852%0.0000,SubBridge:0:SINGLE:-1.8343%0.6268%0.0000 ",
+        "OLDVERTEXID": 11570
+      },
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "MolecularFragment"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 1664785,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "bridge",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": 1.9789000000000003,
+            "y": 0.17000000000000004,
+            "z": 0.0
+          }
+        },
+        {
+          "id": 1664786,
+          "atomPositionNumber": 1,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "bridge",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": -0.3006,
+            "y": -1.4852,
+            "z": 0.0
+          }
+        },
+        {
+          "id": 1664787,
+          "atomPositionNumber": 1,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "SubBridge",
+            "subClass": 0,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": -1.8343,
+            "y": 0.6268,
+            "z": 0.0
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "mol": {
+        "atoms": [
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": 0.6023,
+              "y": 0.7833,
+              "z": 0.0
+            }
+          },
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": -0.4578,
+              "y": 0.0135,
+              "z": 0.0
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 0.4897,
+              "y": 1.8574,
+              "z": 0.0
+            }
+          }
+        ],
+        "bonds": [
+          {
+            "atomIds": [
+              0,
+              1
+            ],
+            "bo": "DOUBLE"
+          },
+          {
+            "atomIds": [
+              0,
+              2
+            ],
+            "bo": "SINGLE"
+          }
+        ]
+      },
+      "vertexId": 1006528,
+      "buildingBlockId": 71,
+      "buildingBlockType": "FRAGMENT",
+      "isRCV": false,
+      "properties": {
+        "ATTACHMENT_POINTS": "1#bridge:0:SINGLE:1.9789%0.1700%0.0000 2#bridge:0:SINGLE:-0.3006%-1.4852%0.0000,SubBridge:0:SINGLE:-1.8343%0.6268%0.0000 ",
+        "OLDVERTEXID": 11872
+      },
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "MolecularFragment"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 1664788,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "ATminus",
+            "subClass": 0,
+            "bndTyp": "ANY"
+          },
+          "dirVec": {
+            "x": 0.0109,
+            "y": -0.0071,
+            "z": 0.0026
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "mol": {
+        "atoms": [
+          {
+            "elSymbol": "ATM",
+            "p3d": {
+              "x": -0.0096,
+              "y": 0.0045,
+              "z": -0.0011
+            }
+          }
+        ],
+        "bonds": []
+      },
+      "vertexId": 1006529,
+      "buildingBlockId": 79,
+      "buildingBlockType": "FRAGMENT",
+      "isRCV": true,
+      "properties": {
+        "ATTACHMENT_POINTS": "1#ATminus:0:ANY:0.0109%-0.0071%0.0026 ",
+        "OLDVERTEXID": 1006106
+      },
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "MolecularFragment"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 1664789,
+          "atomPositionNumber": 0,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "ATminus",
+            "subClass": 0,
+            "bndTyp": "ANY"
+          },
+          "dirVec": {
+            "x": 0.0109,
+            "y": -0.0071,
+            "z": 0.0026
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "mol": {
+        "atoms": [
+          {
+            "elSymbol": "ATM",
+            "p3d": {
+              "x": -0.0096,
+              "y": 0.0045,
+              "z": -0.0011
+            }
+          }
+        ],
+        "bonds": []
+      },
+      "vertexId": 1006530,
+      "buildingBlockId": 79,
+      "buildingBlockType": "FRAGMENT",
+      "isRCV": true,
+      "properties": {
+        "ATTACHMENT_POINTS": "1#ATminus:0:ANY:0.0109%-0.0071%0.0026 ",
+        "OLDVERTEXID": 1005315
+      },
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "MolecularFragment"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 1664790,
+          "atomPositionNumber": 1,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "SubRS",
+            "subClass": 1,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": 0.2985,
+            "y": 0.384,
+            "z": -0.6258
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "mol": {
+        "atoms": [
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": -1.0244,
+              "y": -0.2225,
+              "z": 1.3991
+            }
+          },
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": 0.3973,
+              "y": -0.042,
+              "z": 0.8195
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": -1.5635,
+              "y": -0.9908,
+              "z": 0.8263
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": -0.941,
+              "y": -0.535,
+              "z": 2.446
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": -1.5586,
+              "y": 0.7335,
+              "z": 1.3382
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 0.9335,
+              "y": 0.7221,
+              "z": 1.4011
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 0.927,
+              "y": -1.0102,
+              "z": 0.9001
+            }
+          }
+        ],
+        "bonds": [
+          {
+            "atomIds": [
+              0,
+              1
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              0,
+              2
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              0,
+              3
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              0,
+              4
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              1,
+              5
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              1,
+              6
+            ],
+            "bo": "SINGLE"
+          }
+        ]
+      },
+      "vertexId": 1006531,
+      "buildingBlockId": 24,
+      "buildingBlockType": "FRAGMENT",
+      "isRCV": false,
+      "properties": {
+        "ATTACHMENT_POINTS": "2#SubRS:1:SINGLE:0.2985%0.3840%-0.6258 ",
+        "OLDVERTEXID": 1005325
+      },
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "MolecularFragment"
+    },
+    {
+      "lstAPs": [
+        {
+          "id": 1664791,
+          "atomPositionNumber": 1,
+          "atomPositionNumberInMol": -1,
+          "apClass": {
+            "rule": "SubRS",
+            "subClass": 1,
+            "bndTyp": "SINGLE"
+          },
+          "dirVec": {
+            "x": 0.2985,
+            "y": 0.384,
+            "z": -0.6258
+          }
+        }
+      ],
+      "lstSymAPs": [],
+      "mol": {
+        "atoms": [
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": -1.0244,
+              "y": -0.2225,
+              "z": 1.3991
+            }
+          },
+          {
+            "elSymbol": "C",
+            "p3d": {
+              "x": 0.3973,
+              "y": -0.042,
+              "z": 0.8195
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": -1.5635,
+              "y": -0.9908,
+              "z": 0.8263
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": -0.941,
+              "y": -0.535,
+              "z": 2.446
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": -1.5586,
+              "y": 0.7335,
+              "z": 1.3382
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 0.9335,
+              "y": 0.7221,
+              "z": 1.4011
+            }
+          },
+          {
+            "elSymbol": "H",
+            "p3d": {
+              "x": 0.927,
+              "y": -1.0102,
+              "z": 0.9001
+            }
+          }
+        ],
+        "bonds": [
+          {
+            "atomIds": [
+              0,
+              1
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              0,
+              2
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              0,
+              3
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              0,
+              4
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              1,
+              5
+            ],
+            "bo": "SINGLE"
+          },
+          {
+            "atomIds": [
+              1,
+              6
+            ],
+            "bo": "SINGLE"
+          }
+        ]
+      },
+      "vertexId": 1006532,
+      "buildingBlockId": 24,
+      "buildingBlockType": "FRAGMENT",
+      "isRCV": false,
+      "properties": {
+        "ATTACHMENT_POINTS": "2#SubRS:1:SINGLE:0.2985%0.3840%-0.6258 ",
+        "OLDVERTEXID": 1006107
+      },
+      "uniquefyingPropertyKeys": [],
+      "allowedMutationTypes": [
+        "DELETE",
+        "EXTEND",
+        "CHANGEBRANCH",
+        "CHANGELINK",
+        "ADDLINK",
+        "DELETELINK",
+        "DELETECHAIN"
+      ],
+      "vertexType": "MolecularFragment"
+    }
+  ],
+  "gEdges": [
+    {
+      "srcAPID": 1664770,
+      "trgAPID": 1664774,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 1664771,
+      "trgAPID": 1664775,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 1664772,
+      "trgAPID": 1664776,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 1664773,
+      "trgAPID": 1664777,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 1664769,
+      "trgAPID": 1664778,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 1664768,
+      "trgAPID": 1664780,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 1664779,
+      "trgAPID": 1664783,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 1664781,
+      "trgAPID": 1664786,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 1664785,
+      "trgAPID": 1664788,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 1664782,
+      "trgAPID": 1664789,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 1664784,
+      "trgAPID": 1664790,
+      "bondType": "SINGLE"
+    },
+    {
+      "srcAPID": 1664787,
+      "trgAPID": 1664791,
+      "bondType": "SINGLE"
+    }
+  ],
+  "gRings": [
+    {
+      "vertices": [
+        1006522,
+        1006521,
+        1006520,
+        1006526,
+        1006528,
+        1006529
+      ],
+      "bndTyp": "SINGLE"
+    },
+    {
+      "vertices": [
+        1006523,
+        1006521,
+        1006520,
+        1006525,
+        1006527,
+        1006530
+      ],
+      "bndTyp": "SINGLE"
+    }
+  ],
+  "symVertices": [
+    {
+      "symIds": [
+        1006522,
+        1006523
+      ]
+    },
+    {
+      "symIds": [
+        1006525,
+        1006526
+      ]
+    },
+    {
+      "symIds": [
+        1006527,
+        1006528
+      ]
+    },
+    {
+      "symIds": [
+        1006529,
+        1006530
+      ]
+    },
+    {
+      "symIds": [
+        1006531,
+        1006532
+      ]
+    }
+  ]
+}
+
+> <InChi>
+UOYHCPWMFQAOOZ-VZBJPLEWNA-L
+
+> <UID>
+UOYHCPWMFQAOOZ-VZBJPLEWNA-L
+
+> <SMILES>
+[Pt]12(C#O)[P]3(C(=C4C(C(C(C(C4=C3C(=C(O1)C(C([H])([H])[H])([H])[H])[H])([H])[H])([H])[H])([H])[H])([H])[H])C(=C(O2)C(C([H])([H])[H])([H])[H])[H])C([H])([H])[H]
+
+> <ParentGraph>
+499
+
+> <GraphLevel>
+2
+
+> <MOL_ERROR>
+#RingClosureTool: uncomplete closure (closed 1/2)
+
+$$$$
