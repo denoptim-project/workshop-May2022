@@ -31,8 +31,6 @@ In this exercise we familiarise with the use of molecular fragments, attachment 
 14. Last, we define what attachment points cannot stay unused, but have no capping group. Move to the `Forbidden Ends` tab and `Add Forbidden End Rule` to `Llig:0`  and `Xlig:0`.
 15. Save the compatibility matrix as `my_compatibility_matrix.par` under the `exercise_1.0` folder.
 
-
-
 > **NOTE** Right-click on the molecular viewer to get the vast functionality offered by [Jmol](http://jmol.sourceforge.net/), including, for instance, see the `Select` -> `Invert Selection`. In particular, in the right-click menu you can chose `Console` to open Jmol's command line interface and use the `select` command. Here are some common examples of use:
 > - `select _N`: selects all nitrogen atoms.
 > - `select atomno >= 10 and atomno <= 43`: selects atoms from number 10 to 43 in the list of atom. Note the use of a the logical operator `and`.
