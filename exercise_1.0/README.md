@@ -10,7 +10,7 @@ In this exercise we familiarise with the use of molecular fragments, attachment 
 1. Open the Graphical User Interface (GUI) by running `denoptim` from within the `dnp_workshop` environment.
 2. Chose `Make Fragments` from the list of shortcuts, or `File` -> `New` -> `New Molecular Fragments`.
 3. Using the button under *Import a structure from `File`*, load the structure of each of the Pt complex files stored in this folder.
-4. Click on atoms to select them (see the note below for a hint on how to select atoms) and then `Remove Atoms` to remove them and isolate the molecular fragment you are interested with, or `Atom to AP` to replace a single-connected atom with an attachment point.
+4. Click on atoms to select them (see the note below for a hint on how to select atoms) and then `Remove Atoms` to remove them and isolate the molecular fragment you are interested in, or `Atom to AP` to replace a single-connected atom with an attachment point.
 5. Repeat steps 3 and 4 as much as needed to generate the following fragments:
 	- Iodine (X-ligand) with one attachment point (AP) with APClass `Xlig:1`
 	- NO<sub>2</sub> (X-ligand) with APClass `Xlig:1`
@@ -24,7 +24,7 @@ In this exercise we familiarise with the use of molecular fragments, attachment 
 7. Save this small library of fragments to an SDF file, call it `my_library_of_fragments.sdf` under the `exercise_1.0` folder.
 8. We now create the compatibility rules for assembling Pt complexes by combining molecular building blocks. In DENOPTIM, click `File`->`New`->`New Compatibility Matrix`
 9. `Import APClasses` by loading first the `Pt-CO_fragment.sdf` file and then the ´my_library_of_fragments.sdf´. In both cases, choose ´Scaffolds and Fragments´ when asked about the type of building block.
-10. Then `Add Compatibility Rule` between `Llig:0` and all the APClasses that represent the capability to coordinate a metal as a L-ligand, namely `MPy:1`, `MPhosphine:1`, and `MImidazolylidene:1`. Hold the `command`/`CTRL` key to select multiple entries. None that the two lists refers to different role of the attachment point: *growing graph*, and *incoming fragment*.
+10. Then `Add Compatibility Rule` between `Llig:0` and all the APClasses that represent the capability to coordinate a metal as a L-ligand, namely `MPy:1`, `MPhosphine:1`, and `MImidazolylidene:1`. Hold the `command`/`CTRL` key to select multiple entries. Note that the two lists refers to different role of the attachment point: *growing graph*, and *incoming fragment*.
 11. Add the compatibility rule between `Xlig:0` and `Xlig:1`
 12. Add the compatibility rule between `ImidazolylideneSubN:0` and `ImidazolylideneSubN:1`
 13. We now define the rules to saturate open valences. Import the APClasses from `H_and_Me.sdf`, move to the `Capping Rules` tab, and `Add Capping Rule` to `ImidazolylideneSubN:0` with `hyd:1`
@@ -49,7 +49,7 @@ Here we will briefly use the fragment space to generate all the Pt complexes tha
 - `my_library_of_fragments.sdf` for the *Fragments library*
 - `H_and_Me.sdf` for the *Capping groups library*
 - `my_compatibility_matrix.par` for the *Compatibility matrix file*
-- since we have heavy I atoms, we need to specify 1000 for the maximum molecular weight.
+- since we have heavy atoms, we need to specify 1000 for the maximum molecular weight.
 3. For having a way to sort the generated Pt complexes we make DENOPTIM calculate the molecular weight. Switch to the `Fitness Provider` tab and type `MW` in the text box defining the equation of the fitness.
 4. Click on `Run Now...` and confirm you want to run the experiment. A dialog will tell you where the results will be places: remember that name.
 5. For a short moment the bar on the top-right part of the DENOPTIM window, which was originally blue, will turns grey to indicate that all the submitted tasks are still running. Then it will turn blue to indicate that the run is completed.
