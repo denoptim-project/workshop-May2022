@@ -25,11 +25,7 @@ denoptim
 
 2. build Template
 
-<<<<<<< HEAD
 <img src="template_details.png" alt="template_details.png" width="250"/>
-=======
-<img src="template_details2.png" alt="template_details2.png" width="250"/>
->>>>>>> 7e5f71cc6635db1fed9d063df041fa860df37c7c
 
 **Figure 2**: Detail of the template to build with the graphical interface.
 
