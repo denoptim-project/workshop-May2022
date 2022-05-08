@@ -73,22 +73,41 @@ To create the Template vertex for our tridentate skeleton, we build the graph th
 
   > **Note** after selecting a vertex, do shift-click on another vertex to expand the selection.
 
-  > **Question** what is the effect of symmetric constrains on the number of candidate graphs that can be built from the graph in Figure 4?
+  > **Question 1** what is the effect of symmetric constrains on the number of candidate graphs that can be built from the graph in Figure 4?
 
 13. The graph in Figure 4 is still acyclic, so we add the chords between the appropriate pairs of RCVs by selecting a pair and clicking on `Add Chord`.
 
 14. The graph is now complete. Drag-click to select all vertexes, right-click and choose `Show APClasses`. Verify the result by comparison with Figure 2. Click on `Save changes` and look at eh content on the molecular representation in the bottom-left part of the screen. The system contains only the atoms from the Pt-CO fragment and the dummy atoms coming from the RCVs.
 
-15. So far, the graph is only a graph: it is not embedded in a template. click on `Save Library of Templates` and choose *Contract:*`FIXED_STRUCT` and *Type*: `SCAFFOLD`. Save as `lib_scaffolds_my_template.sdf` under the `exercise_3.0` folder.
+15. So far, the graph is special only in the fact that it contains empty vertexes. More importantly, it is not yet embedded in a template. To enclose the graph in a template, click on `Save Library of Templates` and choose *Contract:*`FIXED_STRUCT` and *Type*: `SCAFFOLD`. Save as `lib_scaffolds_my_template.sdf` under the `exercise_3.0` folder.
 
 ### Evolutionary Design with Templates
 We are now going to use the template vertex we have just created to design our symmetric chelates for Pt-CO complexes.
 
-1. 
+1. Open the file of parameters
+  ```
+  denoptim input_parameters
+  ```
+  and inspect the parameters. This file assumes you have created the `lib_scaffolds_my_template.sdf` file in the previous part of the exercise.
 
+2. Run the evolutionary design by clicking on `Run Now...`.
 
-> **Question**: plot the number of attempts to build new candidates. How does it compare with the design of ligand sets made only of monodentate ligands?  
+  > **Note**: giving a file with input parameters the evolutionary design can be started directly from the command line:
+  ```
+  denoptim -r GA input_parameters
+  ```
+
+3. Once the experiment is finished, open the output with `File`->`Open Recent...` and inspect the results.
+
+  > **Note**: opening the GA inspector is also among the operations that can be done directly from the command line:
+  ```
+  denoptim <pathname_to_folder_RUNYYYYMMDDHHMMSS>
+  ```
+
+  > **Question 2**: Consider the symmetry of the generated complexes. Search for ligands that have lower symmetry than others, for example, N-heterocyclic carbenes with different sets of substituents on the carbon atoms of their backbone. Is the graph representation symmetric? Motivate your answer reflecting on [DENOPTIM's definition of symmetric attachment points](https://htmlpreview.github.io/?https://github.com/denoptim-project/DENOPTIM/blob/master/doc/user_manual.html#Toc43999_808352928).
+
+  > **Question 3**: plot the number of attempts to build new candidates. How does it compare with the design of ligand sets made only of monodentate ligands? Explain the difference.
 
 
 ## Discussion
-- Consider a catalyst of your choice that includes a multidentate ligand. Think of ways to modify the metal-containing ring to tune the properties of the catalyst. Build a template for the purpose. Describe your reasoning and show the template's embedded graph in your report.
+Consider a catalyst of your choice that has a multidentate ligand.  Build a template vertex that would allow to re-design the chelating ligand. Describe your reasoning and show the template's embedded graph in your report. If needed, describe also what fragment you would need to generate to address the specific chemistry of your catalyst.
