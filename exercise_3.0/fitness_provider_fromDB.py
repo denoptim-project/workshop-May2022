@@ -59,16 +59,16 @@ def copySDFandAddProperty(inputSDF, outputSDF, propName, propValue):
     outfile = open(outputSDF,'w')
     for line in infile:
         if "$$$$" in line:
-            outfile.write("> <"+propName+">"+os.linesep)
-            outfile.write(propValue+os.linesep)
-            outfile.write(os.linesep)
+            outfile.write('> <'+propName+'>\n')
+            outfile.write(propValue+'\n')
+            outfile.write('\n')
         outfile.write(line)
     infile.close()
     outfile.close()
 
 def exitWithError(msg, status):
     copySDFandAddProperty(inpSDF,preliminaryOutput,"MOL_ERROR",msg)
-    os.rename(preliminaryOutput,outSDF)
+    os.replace(preliminaryOutput,outSDF)
     print("Exiting with error: "+msg)
     sys.stdout.close()
     sys.exit(status)
@@ -125,7 +125,7 @@ if not os.path.isfile(pathNameTo3D):
 else:
     # Recover the 3D model from the archive
     preOutB = open(preliminaryOutputB,'w')
-    preOutB.write(molName + os.linesep)
+    preOutB.write(molName + '\n')
     with open(pathNameTo3D, "r") as precomputed3Dfile:
         next(precomputed3Dfile) #skip the prev mol name
         for line in precomputed3Dfile:
@@ -143,7 +143,7 @@ else:
             preOutB.write(line)
     preOut.close()
     preOutB.close()
-    os.rename(preliminaryOutputB, preliminaryOutput)
+    os.replace(preliminaryOutputB, preliminaryOutput)
 
 
 print("All done. Returning "+outSDF)
