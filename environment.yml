@@ -1,7 +1,0 @@
-name: dnp_workshop
-channels:
-  - conda-forge
-  - denoptim-project
-dependencies:
-  - python
-  - denoptim
