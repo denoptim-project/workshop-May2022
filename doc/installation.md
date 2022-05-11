@@ -163,3 +163,6 @@ Deactivating will remove the `denoptim` command, so it is an operation meant for
 conda deactivate
 ```
 
+# Download Datasets
+Download all the data needed to run the exercises from [here](https://github.com/denoptim-project/workshop-May2022/archive/refs/tags/v1.2.0.zip).
+
