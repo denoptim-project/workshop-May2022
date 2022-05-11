@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 1.0: Building Transition Metal Complexes from Fragments &mdash; DENOPTIM Workshop 2022  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Exercise 2.0: Evolutionary Design of trans-Pt(X)(X’)(L)(CO)" href="exercise_2.0.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> DENOPTIM Workshop 2022
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#download-datasets">Download Datasets</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Exercise 1.0: Building Transition Metal Complexes from Fragments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-space-of-building-blocks-fragment-space">Create a Space of Building Blocks (Fragment Space)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#explore-the-fragment-space">Explore the fragment space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#discussion">Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#go-beyond-classical-chemistry">Go Beyond Classical Chemistry</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exercise_2.0.html">Exercise 2.0: Evolutionary Design of <em>trans</em>-Pt(X)(X’)(L)(CO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise_3.0.html">Exercise 3.0: Evolutionary Design of κ<sup>3</sup>-Chelator for Pt(CO)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DENOPTIM Workshop 2022</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Exercise 1.0: Building Transition Metal Complexes from Fragments</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/exercise_1.0.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="exercise-1-0-building-transition-metal-complexes-from-fragments">
+<h1>Exercise 1.0: Building Transition Metal Complexes from Fragments<a class="headerlink" href="#exercise-1-0-building-transition-metal-complexes-from-fragments" title="Permalink to this headline"></a></h1>
+<p>In this exercise we familiarise with the use of molecular fragments, attachment points, and connection rules. The goal is to build a small space of building blocks, also known as a “fragment space”, from scratch.</p>
+<blockquote>
+<div><p><strong>NOTE</strong> This exercise is best performed while having access to the Internet. DENOPTIM will, in fact, call for an online service that converts SMILES to 3D-structures. When off-line, it will offer the user with the choice to use a local functionality from <a class="reference external" href="https://cdk.github.io/">CDK</a>, which is OK but slower and less accurate.</p>
+</div></blockquote>
+<section id="create-a-space-of-building-blocks-fragment-space">
+<h2>Create a Space of Building Blocks (Fragment Space)<a class="headerlink" href="#create-a-space-of-building-blocks-fragment-space" title="Permalink to this headline"></a></h2>
+<ol class="arabic simple">
+<li><p>Open the Graphical User Interface (GUI) by running <code class="docutils literal notranslate"><span class="pre">denoptim</span></code> from within the <code class="docutils literal notranslate"><span class="pre">dnp_workshop</span></code> environment.</p></li>
+<li><p>Chose <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">Fragments</span></code> from the list of shortcuts, or <code class="docutils literal notranslate"><span class="pre">File</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Molecular</span> <span class="pre">Fragments</span></code>.</p></li>
+<li><p>Using the button under <em>Import a structure from <code class="docutils literal notranslate"><span class="pre">File</span></code></em>, load the structure of each of the Pt complex files stored in this folder.</p></li>
+<li><p>Click on atoms to select them (see the note below for a hint on how to select atoms) and then <code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">Atoms</span></code> to remove them and isolate the molecular fragment you are interested in, or <code class="docutils literal notranslate"><span class="pre">Atom</span> <span class="pre">to</span> <span class="pre">AP</span></code> to replace a single-connected atom with an attachment point.</p></li>
+<li><p>Repeat steps 3 and 4 as much as needed to generate the following fragments:</p>
+<ul class="simple">
+<li><p>Iodine (X-ligand) with one attachment point (AP) with APClass <code class="docutils literal notranslate"><span class="pre">Xlig:1</span></code></p></li>
+<li><p>NO<sub>2</sub> (X-ligand) with APClass <code class="docutils literal notranslate"><span class="pre">Xlig:1</span></code></p></li>
+<li><p>P(Ph)<sub>3</sub> (L-ligand) with one APClass <code class="docutils literal notranslate"><span class="pre">MPhosphine:1</span></code></p></li>
+<li><p>Pyridine (L-ligand) with APClass <code class="docutils literal notranslate"><span class="pre">MPy:1</span></code></p></li>
+<li><p>the five-atom ring of imidazolylidene (a N-heterocyclic carbene, or NHC, fragment) with one AP with class <code class="docutils literal notranslate"><span class="pre">MImidazolylidene:1</span></code> and two APs with class <code class="docutils literal notranslate"><span class="pre">ImidazolylideneSubN:0</span></code> each replacing one of the substituents on the N atoms.</p></li>
+</ul>
+</li>
+<li><p>We now create some organic fragments to populate the N-substituents on the NHC fragment. Since NHCs can often be synthesised starting from amines (see <a class="reference external" href="https://doi.org/10.1021/cr100328e"><em>Chem. Rev.</em> <strong>2011</strong>, 111, 4, 2705–2733</a>, you can generate the structure of an amine by clicking on <em>Import structure from <code class="docutils literal notranslate"><span class="pre">SMILES</span></code></em> and type a <a class="reference external" href="https://www.daylight.com/dayhtml/doc/theory/theory.smiles.html">SMILES string</a>. For example, generate these amines and converted them to fragments by replacing the N atom with an attachment point of class <code class="docutils literal notranslate"><span class="pre">ImidazolylideneSubN:1</span></code>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CN</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">c1(C)ccccc1N</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">C1CCCCC1N</span></code></p></li>
+</ul>
+</li>
+<li><p>Save this small library of fragments to an SDF file, call it <code class="docutils literal notranslate"><span class="pre">my_library_of_fragments.sdf</span></code> under the <code class="docutils literal notranslate"><span class="pre">exercise_1.0</span></code> folder.</p></li>
+<li><p>We now create the compatibility rules for assembling Pt complexes by combining molecular building blocks. In DENOPTIM, click <code class="docutils literal notranslate"><span class="pre">File</span></code>-&gt;<code class="docutils literal notranslate"><span class="pre">New</span></code>-&gt;<code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Compatibility</span> <span class="pre">Matrix</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">APClasses</span></code> by loading first the <code class="docutils literal notranslate"><span class="pre">Pt-CO_fragment.sdf</span></code> file and then the ´my_library_of_fragments.sdf´. In both cases, choose ´Scaffolds and Fragments´ when asked about the type of building block.</p></li>
+<li><p>Then <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Compatibility</span> <span class="pre">Rule</span></code> between <code class="docutils literal notranslate"><span class="pre">Llig:0</span></code> and all the APClasses that represent the capability to coordinate a metal as a L-ligand, namely <code class="docutils literal notranslate"><span class="pre">MPy:1</span></code>, <code class="docutils literal notranslate"><span class="pre">MPhosphine:1</span></code>, and <code class="docutils literal notranslate"><span class="pre">MImidazolylidene:1</span></code>. Hold the <code class="docutils literal notranslate"><span class="pre">command</span></code>/<code class="docutils literal notranslate"><span class="pre">CTRL</span></code> key to select multiple entries. Note that the two lists refers to different role of the attachment point: <em>growing graph</em>, and <em>incoming fragment</em>.</p></li>
+<li><p>Add the compatibility rule between <code class="docutils literal notranslate"><span class="pre">Xlig:0</span></code> and <code class="docutils literal notranslate"><span class="pre">Xlig:1</span></code></p></li>
+<li><p>Add the compatibility rule between <code class="docutils literal notranslate"><span class="pre">ImidazolylideneSubN:0</span></code> and <code class="docutils literal notranslate"><span class="pre">ImidazolylideneSubN:1</span></code></p></li>
+<li><p>We now define the rules to saturate open valences. Import the APClasses from <code class="docutils literal notranslate"><span class="pre">H_and_Me.sdf</span></code>, move to the <code class="docutils literal notranslate"><span class="pre">Capping</span> <span class="pre">Rules</span></code> tab, and <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Capping</span> <span class="pre">Rule</span></code> to <code class="docutils literal notranslate"><span class="pre">ImidazolylideneSubN:0</span></code> with <code class="docutils literal notranslate"><span class="pre">hyd:1</span></code></p></li>
+<li><p>Last, we define what attachment points cannot stay unused, but have no capping group. Move to the <code class="docutils literal notranslate"><span class="pre">Forbidden</span> <span class="pre">Ends</span></code> tab and <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Forbidden</span> <span class="pre">End</span> <span class="pre">Rule</span></code> to <code class="docutils literal notranslate"><span class="pre">Llig:0</span></code>  and <code class="docutils literal notranslate"><span class="pre">Xlig:0</span></code>.</p></li>
+<li><p>Save the compatibility matrix as <code class="docutils literal notranslate"><span class="pre">my_compatibility_matrix.par</span></code> under the <code class="docutils literal notranslate"><span class="pre">exercise_1.0</span></code> folder.</p></li>
+</ol>
+<blockquote>
+<div><p><strong>NOTE</strong> Right-click on the molecular viewer to get the vast functionality offered by <a class="reference external" href="http://jmol.sourceforge.net/">Jmol</a>, including, for instance, see the <code class="docutils literal notranslate"><span class="pre">Select</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Invert</span> <span class="pre">Selection</span></code>. In particular, in the right-click menu you can chose <code class="docutils literal notranslate"><span class="pre">Console</span></code> to open Jmol’s command line interface and use the <code class="docutils literal notranslate"><span class="pre">select</span></code> command. Here are some common examples of use:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">_N</span></code>: selects all nitrogen atoms.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">atomno</span> <span class="pre">&gt;=</span> <span class="pre">10</span> <span class="pre">and</span> <span class="pre">atomno</span> <span class="pre">&lt;=</span> <span class="pre">43</span></code>: selects atoms from number 10 to 43 in the list of atom. Note the use of a the logical operator <code class="docutils literal notranslate"><span class="pre">and</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">search(&quot;&lt;SMARTS&gt;&quot;)</span></code> where <code class="docutils literal notranslate"><span class="pre">&lt;SMARTS&gt;</span></code> is a <a class="reference external" href="https://www.daylight.com/dayhtml/doc/theory/theory.smarts.html">SMARTS substructure search query</a>. For example,</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">search(&quot;[#7]-[#6]&quot;)</span></code>: selects all nitrogen and carbon atoms of any kind that are connected by a single bond.
+- <code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">search(&quot;[r5]&quot;)</span></code>: selects all atoms that are part of a five-member ring.</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">selected</span> <span class="pre">OR</span> <span class="pre">connected(selected)</span></code>: propagates selection to all atoms connected to currently selected atoms.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">select</span> <span class="pre">none</span></code>: clears the list of selected atoms.
+Refer to <a class="reference external" href="https://chemapps.stolaf.edu/jmol/docs/">Jmol’s documentation</a> for further details on the functionality provided by Jmol.</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="explore-the-fragment-space">
+<h2>Explore the fragment space<a class="headerlink" href="#explore-the-fragment-space" title="Permalink to this headline"></a></h2>
+<p>Here we will briefly use the fragment space to generate all the Pt complexes that are encoded in the space we have just generated.</p>
+<ol class="arabic simple">
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">File</span></code>-&gt;<code class="docutils literal notranslate"><span class="pre">New</span></code>-&gt;<code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Virtual</span> <span class="pre">Screening</span></code>.</p></li>
+<li><p>In the windows for the configuration of the run, under the <code class="docutils literal notranslate"><span class="pre">Space</span> <span class="pre">of</span> <span class="pre">Building</span> <span class="pre">Blocks</span></code> tab browse to specify:</p></li>
+</ol>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Pt-CO_fragment.sdf</span></code> for the *Scaffold fragments library *</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">my_library_of_fragments.sdf</span></code> for the <em>Fragments library</em></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">H_and_Me.sdf</span></code> for the <em>Capping groups library</em></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">my_compatibility_matrix.par</span></code> for the <em>Compatibility matrix file</em></p></li>
+<li><p>since we have heavy atoms, we need to specify 1000 for the maximum molecular weight.</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>For having a way to sort the generated Pt complexes we make DENOPTIM calculate the molecular weight. Switch to the <code class="docutils literal notranslate"><span class="pre">Fitness</span> <span class="pre">Provider</span></code> tab and type <code class="docutils literal notranslate"><span class="pre">MW</span></code> in the text box defining the equation of the fitness.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Now...</span></code> and confirm you want to run the experiment. A dialog will tell you where the results will be places: remember that name.</p></li>
+<li><p>For a short moment the bar on the top-right part of the DENOPTIM window, which was originally blue, will turns grey to indicate that all the submitted tasks are still running. Then it will turn blue to indicate that the run is completed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">File</span></code>-&gt;<code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Recent</span></code> to select the results and open them.</p></li>
+</ol>
+</section>
+<section id="discussion">
+<h2>Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>How to define a fragment space that for Pt complexes where the properties of the metal center can vary with the largest range?</p></li>
+<li><p>Conversely, how to design a fragment space that allows to achieve the finest resolution when mapping the properties of the Pt complex?</p></li>
+<li><p>Reflect over strategies to design fragment spaces for exploring properties of a central transition metal (e.g., the effective electron density on the metal) vs exploring inter-molecular interaction properties (e.g., interaction of the transition metal complex with the surrounding environment, like with solvent and surfaces).</p></li>
+</ul>
+</section>
+<section id="go-beyond-classical-chemistry">
+<h2>Go Beyond Classical Chemistry<a class="headerlink" href="#go-beyond-classical-chemistry" title="Permalink to this headline"></a></h2>
+<p>DENOPTIM can handle any arrangement of atoms and pseudo-atoms. Have  look in the <code class="docutils literal notranslate"><span class="pre">exercise_1.0/examples_with_Du</span></code> for examples where dummy atoms are used to represent multi-hapto metal-ligand bonding.</p>
+<p>Although you can open these file via the GUI, we use this opportunity to use the command line interface for opening files with DENOPTIM. Try:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">denoptim</span> <span class="n">examples_with_Du</span><span class="o">/</span><span class="n">MOL000006</span><span class="o">.</span><span class="n">sdf</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="exercise_2.0.html" class="btn btn-neutral float-right" title="Exercise 2.0: Evolutionary Design of trans-Pt(X)(X’)(L)(CO)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Marco Foscato.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

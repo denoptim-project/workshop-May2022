@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 2.0: Evolutionary Design of trans-Pt(X)(X’)(L)(CO) &mdash; DENOPTIM Workshop 2022  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Exercise 3.0: Evolutionary Design of κ3-Chelator for Pt(CO)" href="exercise_3.0.html" />
+    <link rel="prev" title="Exercise 1.0: Building Transition Metal Complexes from Fragments" href="exercise_1.0.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> DENOPTIM Workshop 2022
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#download-datasets">Download Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise_1.0.html">Exercise 1.0: Building Transition Metal Complexes from Fragments</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Exercise 2.0: Evolutionary Design of <em>trans</em>-Pt(X)(X’)(L)(CO)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fitness">Fitness</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#instructions">Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#discussion">Discussion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exercise_3.0.html">Exercise 3.0: Evolutionary Design of κ<sup>3</sup>-Chelator for Pt(CO)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DENOPTIM Workshop 2022</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Exercise 2.0: Evolutionary Design of <em>trans</em>-Pt(X)(X’)(L)(CO)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/exercise_2.0.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="exercise-2-0-evolutionary-design-of-trans-pt-x-x-l-co">
+<h1>Exercise 2.0: Evolutionary Design of <em>trans</em>-Pt(X)(X’)(L)(CO)<a class="headerlink" href="#exercise-2-0-evolutionary-design-of-trans-pt-x-x-l-co" title="Permalink to this headline"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
+<p>In this exercise we play with the genetic algorithm while designing Pt compounds. To allow a chemical interpretation of the results, we define a chemical design goal: identify a set of ligands [X, X’, L], where each X is a covalent ligand and L is a neutral donor (dative) ligand, that weaken the C≡O bond of the carbonyl ligand in the square planar complex <em>trans</em>-Pt(X)(X’)(L)(CO).</p>
+<p>The variable strength of the CO bond results from the electronic properties of the metal fragment <em>trans</em>-Pt(X)(X’)(L). The bonding between the metal and CO involves electron donation from the carbonyl carbon atom to the metal, and back-donation from an occupied <em>d</em>-orbital of the metal center to the CO π-antibonding orbital. The accompanying weakening of the CO bond is reflected in bond elongation and red-shift of the corresponding stretching frequency. This effect is the basis for the <a class="reference external" href="https://en.wikipedia.org/wiki/Tolman_electronic_parameter">Tolman electronic parameter</a>, which is often used to classify ligands according to their electronic properties.</p>
+<section id="fitness">
+<h3>Fitness<a class="headerlink" href="#fitness" title="Permalink to this headline"></a></h3>
+<p>The fitness associated to each set [X, X’, L] is defined by the length of the C≡O bond of the carbonyl ligand in the square planar complex <em>trans</em>-Pt(X)(X’)(L)(CO) as provided by the following molecular modelling protocol:</p>
+<ol class="arabic simple">
+<li><p>assembling of 3D building blocks to generate an initial molecular model.</p></li>
+<li><p>light-weight conformational search performed by <a class="reference external" href="https://tinkertools.org/">Tinker</a> in the torsional space (bond lengths and angles are not changed).</p></li>
+<li><p>geometry optimization by semi-empirical method PM6 as implemented in <a class="reference external" href="https://www.wavefun.com/spartan">Spartan</a>.</p></li>
+</ol>
+<p>Since we want to run several experiments in little time, this exercise is designed to avoid the time-consuming molecular modelling part needed to obtain the value of the fitness. In fact, the fitness value for all the candidates that can be generated by the building block space has been preliminary computed.</p>
+<p>Therefore, the fitness provider (i.e., the Python script named <code class="docutils literal notranslate"><span class="pre">fitness_provider_fromDB.py</span></code>) is only searching for the fitness value for a given Pt complex in the list of pre-computed fitness values.</p>
+</section>
+</section>
+<section id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><p><strong>Note</strong>: You can save the plots by right-clicking on them and choosing <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As...</span></code>. Similarly, you can save pictures of molecular models by right-clicking on them and choosing <code class="docutils literal notranslate"><span class="pre">File</span></code>-&gt;<code class="docutils literal notranslate"><span class="pre">Save</span></code>-&gt;<code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">As</span> <span class="pre">PNG</span></code>.</p>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Start DENOPTIM from within the <code class="docutils literal notranslate"><span class="pre">exercise_2.0</span></code> folder. This is done from the Terminal (macOS/Linux) or the Anaconda prompt (Windows):</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">your_path_to_exercise_2</span><span class="mf">.0</span>
+<span class="n">denoptim</span> <span class="n">input_parameters</span>
+</pre></div>
+</div>
+<ol class="arabic" start="2">
+<li><p>Inspect the parameters:</p>
+<ul>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">Genetic</span> <span class="pre">Algorithm</span></code> tab, weights of mutation and crossover to 0: the algorithm will do neither crossover nor mutation. Instead, the weight of construction from scratch is 1: all new candidates will be built randomly from scratch (we will refer to this as “construction-only” experiment). Also, the experiment will use an initial population, which you can look at by opening the <code class="docutils literal notranslate"><span class="pre">initPopulation.sdf</span></code> file. Note that these are complexes with short CO bond (i.e., low fitness).</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">Fitness</span> <span class="pre">Provider</span></code> tab configures the call to the external python script that “calculates” the fitness.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">Space</span> <span class="pre">of</span> <span class="pre">Building</span> <span class="pre">Blocks</span></code> tab, you find the names of the files collecting the building blocks and the APClass compatibility rules.</p></li>
+<li><p>Do <code class="docutils literal notranslate"><span class="pre">File</span></code>-&gt;<code class="docutils literal notranslate"><span class="pre">Open</span></code> to inspect the scaffold fragment at <code class="docutils literal notranslate"><span class="pre">lib_scaffolds.sdf</span></code> file.</p>
+<blockquote>
+<div><p><strong>Question 1:</strong> Which one is the attachment point representing the coordination site for the dative (L-type) ligand? What is the <em>attachment point class</em> (APClass)?</p>
+</div></blockquote>
+</li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">File</span></code>-&gt;<code class="docutils literal notranslate"><span class="pre">Open</span></code> and inspect the <code class="docutils literal notranslate"><span class="pre">compatibility_matrix.par</span></code> file.</p>
+<blockquote>
+<div><p><strong>Question 2:</strong> Which APClasses can be used on the attachment point for the L-type ligand? And for the X-type ligand?</p>
+</div></blockquote>
+</li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">File</span></code>-&gt;<code class="docutils literal notranslate"><span class="pre">Open</span></code> and inspect the <code class="docutils literal notranslate"><span class="pre">lib_fragments.sdf</span></code> file. Look for the fragments that offer attachment points belonging to the APClasses you have identified in the previous step.</p>
+<blockquote>
+<div><p><strong>Question 3:</strong> Use your chemical experience and intuition to guess what set of ligands [X, X’, L] can produce a high fitness. Discuss the likeliness of randomly picking such a set.</p>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p>Go back to the input parameters by clicking on <code class="docutils literal notranslate"><span class="pre">Active</span> <span class="pre">Tabs</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Prepare</span> <span class="pre">GA</span> <span class="pre">experiment</span></code> and start the evolutionary design by clicking on <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">now...</span></code> and follow the dialog: Once the experiment is submitted, you will be notified on where the output is being written.</p>
+<blockquote>
+<div><p><strong>Note</strong>: As seen in exercise 1.0, the bar in the top-right part of DENOPTIM’s window turns grey to indicate the experiment is running. When it turns blue again, the experiment is complete.</p>
+</div></blockquote>
+</li>
+<li><p>When the experiment has been completed, open the output from <code class="docutils literal notranslate"><span class="pre">File</span></code>-&gt;<code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Recent...</span></code> and select the appropriate path. This opens a “GARun inspector” tab where you find:</p>
+<ul class="simple">
+<li><p>The evolution plot (top-right panel): each point is a a candidate, click on it to display the structure and properties of the candidate. By default, the plot show two blue lines: the <em>minimum</em> and the <em>maximum</em> value of the fitness in the population. The button <code class="docutils literal notranslate"><span class="pre">Show/Hide</span> <span class="pre">Population</span> <span class="pre">Stats</span></code> allows to add also the mean and median.</p></li>
+<li><p>The monitor plot (bottom-right panel): collects numerical indicators of the algorithm behaviour, such as the number of attempts to create candidates, which is the series shown by default. The button <code class="docutils literal notranslate"><span class="pre">Show/Hide</span> <span class="pre">Population</span> <span class="pre">Stats</span></code> allows to add/remove series to the plot.</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Question 4</strong>: With the exclusion of generation 0 (i.e., the initial population given as input), how does are the candidate’s fitness values distributed over the fitness axis during the course of the experiment? Explain this distribution. (Hint: remember what we noted when inspecting the input parameters in point 2)</p>
+</div></blockquote>
+</li>
+<li><p>Run two more independent experiments starting from the same input parameters. By default, each experiment uses an independent sequence of pseudo-random events. Therefore, to get independent repeats you can switch back to the input parameters by clicking on <code class="docutils literal notranslate"><span class="pre">Active</span> <span class="pre">Tabs</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Prepare</span> <span class="pre">GA</span> <span class="pre">experiment</span></code>, and submit again with <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">now...</span></code>. You can submit more than one experiment in parallel.</p></li>
+<li><p>Now we produce another set of GA experiments where we change the way the software is allowed to generate new candidates. Via <code class="docutils literal notranslate"><span class="pre">Active</span> <span class="pre">Tabs</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Prepare</span> <span class="pre">GA</span> <span class="pre">experiment</span></code> go back to the input parameters and do the following in the <code class="docutils literal notranslate"><span class="pre">Genetic</span> <span class="pre">Algorithm</span></code> tab:</p>
+<ul class="simple">
+<li><p>set <em>Crossover weight</em> = 1</p></li>
+<li><p>set <em>Construction weight</em> = 0</p></li>
+</ul>
+</li>
+<li><p>Submit three such “crossover-only” experiments via the <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">now...</span></code> button.</p></li>
+<li><p>Inspect the results of these “crossover-only” experiments.</p>
+<blockquote>
+<div><p><strong>Question 5</strong>: Explain what you observe in the evolution and monitor plots? (Hint: plot the <em>Duplicate Pre-Fitness</em> series)</p>
+</div></blockquote>
+</li>
+<li><p>Now, we produce “mutation-only” experiments. Again, via <code class="docutils literal notranslate"><span class="pre">Active</span> <span class="pre">Tabs</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Prepare</span> <span class="pre">GA</span> <span class="pre">experiment</span></code> go back to the input parameters and set the following in the <code class="docutils literal notranslate"><span class="pre">Genetic</span> <span class="pre">Algorithm</span></code> tab:</p>
+<ul class="simple">
+<li><p><em>Crossover weight</em> = 0</p></li>
+<li><p><em>Mutation weight</em> = 1</p></li>
+<li><p><em>Construction weight</em> = 0</p></li>
+</ul>
+<p>As before, run three such experiments.</p>
+</li>
+<li><p>Inspect the results of these “mutation-only” experiments.</p>
+<blockquote>
+<div><p><strong>Question 6</strong>: Compare mutation and crossover in terms of capability to introduce new structural features in the population.</p>
+</div></blockquote>
+</li>
+<li><p>Finally, we combine crossover, mutation and random construction (we’ll call these the “complete GA” experiments). Again, via <code class="docutils literal notranslate"><span class="pre">Active</span> <span class="pre">Tabs</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Prepare</span> <span class="pre">GA</span> <span class="pre">experiment</span></code> go back to the input parameters and set the following in the <code class="docutils literal notranslate"><span class="pre">Genetic</span> <span class="pre">Algorithm</span></code> tab:</p>
+<ul class="simple">
+<li><p><em>Crossover weight</em> = 1</p></li>
+<li><p><em>Mutation weight</em> = 1</p></li>
+<li><p><em>Construction weight</em> = 1</p></li>
+</ul>
+</li>
+<li><p>Inspect the results of these runs as well. In particular, chose an experiment that produced a population with a high mean fitness and, from the GARun Inspector, click on <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Population</span> <span class="pre">Graphs</span></code> to visualize the molecules in the population at a late stage of the experiment (high generation number).</p></li>
+</ol>
+</section>
+<section id="discussion">
+<h2>Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Briefly discuss how crossover and mutation operations are suitable to i) identify unknown structural features that lead to high fitness, ii) generate candidates by inheriting such features, and iii) combine features into new offspring. Try to refer to the observations from the “crossover-only” and “mutation-only” experiments.</p></li>
+<li><p>Report the sample size: the number of candidates (i.e., #offspring * #generations) that were visited before collecting at least 3 candidate with fitness higher then 1.151 Å. Compare this number with the size of the reachable search space, i.e., 10332. What is the sample size for “construction-only” experiments? What for “complete GA”?</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="exercise_1.0.html" class="btn btn-neutral float-left" title="Exercise 1.0: Building Transition Metal Complexes from Fragments" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="exercise_3.0.html" class="btn btn-neutral float-right" title="Exercise 3.0: Evolutionary Design of κ3-Chelator for Pt(CO)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Marco Foscato.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
