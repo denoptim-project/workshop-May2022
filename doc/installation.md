@@ -10,7 +10,8 @@ The instructions are inspired by and derived from work by [Software Carpentry](h
 
 ## Command line
 On **macOS/Linux** you can use the default Terminal and skip this section.
-On **Windows you** can [Git for Windows installer](https://gitforwindows.org/) following the steps in the
+
+On **Windows** you can [Git for Windows installer](https://gitforwindows.org/) following the steps in the
   [Carpentries video tutorial](https://www.youtube-nocookie.com/embed/339AEqk9c-8?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0).
 
 
