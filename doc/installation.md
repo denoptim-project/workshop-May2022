@@ -130,9 +130,8 @@ conda env list
 
 ### Activating the `dnp_workshop` environment
 
-In the workshop, we will ask you to activate this environment. 
+In the workshop, we will ask you to activate this environment. This operation must be done every time you have a new session on the terminal. For example, when you open a new terminal.
 
-First, follow the steps 1 and 2 above (i.e. open your terminal shell and activate `conda`).
 Then run the following:
 ```
 conda activate dnp_workshop
@@ -140,13 +139,13 @@ conda activate dnp_workshop
 
 If this does not work, the `dnp_workshop` part should be replaced with the whole path, for example:
 ```
-source activate ~/Miniconda3/envs/coderefinery
+source activate ~/Miniconda3/envs/dnp_workshop
 ```
 
 
 ### How to verify the environment
 
-Once activated, try the following 5 commands:
+Once activated, try the following command:
 ```
 denoptim -v
 ```
