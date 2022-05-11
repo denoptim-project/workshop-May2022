@@ -12,4 +12,6 @@ Welcome to DENOPTIM Workshop 2022's documentation!
 
    installation.md
    exercise_1.0.md
+   exercise_2.0.md
+   exercise_3.0.md
 
