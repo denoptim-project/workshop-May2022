@@ -8,6 +8,7 @@ jobs:
       - uses: actions/setup-python@v2
       - name: Install dependencies
         run: |
+          pip install sphinx-rtd-theme
           pip install myst-parser
           pip install sphinx sphinx_rtd_theme
       - name: Sphinx build
